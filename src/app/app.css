@@ -33,7 +33,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: auto;
     margin-top: 80px;
     background: linear-gradient(to bottom right, #FFF 0%, #FFD466 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, #FFD466 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, #FFD466 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, #FFD466 50%) top right / 50% 50% no-repeat;
 }
@@ -949,8 +949,22 @@ video {
     display: flex;
     justify-content: center;
     align-content: center;
+    /* flex-direction: column; */
     gap: 76px;
     padding: 0px 0px 50px 0px;
+}
+
+.abtfirstrow{
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+
+}
+.abtsecondrow{
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+
 }
 
 .abts {
@@ -3439,11 +3453,11 @@ font-family: 'Nada Qonita', cursive;
         padding: 5px;
     }
 
-    .imgform {
+    .videoform {
         display: none;
     }
 
-    .videoform {
+    .imgform {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -3527,6 +3541,10 @@ font-family: 'Nada Qonita', cursive;
     .intro {
         height: auto;
     }
+
+.body{
+    margin: 0px;
+}
 
     .footer {
         display: none;
@@ -3872,8 +3890,12 @@ font-family: 'Nada Qonita', cursive;
         line-height: 20px;
     }
 
+    .bookbtn{
+        padding: 20px 0px 0px 0px;
+    }
+
     .abtsur {
-        height: 100vh;
+        height: 65vh;
     }
 
     .abtsurp {
@@ -3883,10 +3905,18 @@ font-family: 'Nada Qonita', cursive;
     }
 
     .abtsurdes {
-        display: flex;
+        display: grid;
         /* grid-template-columns: repeat(3, 1fr); */
         gap: 1px;
         padding: 0px;
+    }
+
+    .abtfirstrow{
+        gap: 0px;
+    }
+
+    .abtsecondrow{
+        gap: 0px;
     }
 
     .abt {
@@ -4129,7 +4159,7 @@ font-family: 'Nada Qonita', cursive;
     .docincopy {
         display: flex;
         flex-direction: column;
-        height: 1000px;
+        height: 855px;
     }
 
     .experience {
@@ -4848,7 +4878,7 @@ padding: 10px;
 
     .list1 {
         font-size: 12px;
-        /* text-align: center; */
+        text-align: center;
         padding: 0px 0px 0px 100px;
     }
 

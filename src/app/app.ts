@@ -1,4 +1,4 @@
-import { Component, signal,ElementRef, AfterViewInit, ViewChild, Output, EventEmitter } from '@angular/core';
+import { Component, signal,ElementRef, AfterViewInit, ViewChild, Output, EventEmitter,HostListener  } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 // import { BreakpointObserver,Breakpoints, BreakpointState } from '@angular/cdk/layout';//
@@ -259,5 +259,27 @@ export class app {
         this.isSubmitting = false;
       });
   }
+
+
+  // showPopup = false;
+  // popupShown = false;
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   if (this.popupShown) return;
+
+  //   const scrollPosition = window.scrollY;
+  //   const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+  //   const scrollPercent = (scrollPosition / pageHeight) * 100;
+
+  //   if (scrollPercent > 50) { // show after 50% scroll
+  //     this.showPopup = true;
+  //     this.popupShown = true;
+  //   }
+  // }
+
+  // closePopup() {
+  //   this.showPopup = false;
+  // }
 }
 
