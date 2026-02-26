@@ -2105,9 +2105,10 @@ font-family: 'Nada Qonita', cursive;
 
 @media (max-width:1024px) {
 
-    body{
+    body {
         margin: 0px;
     }
+
     .intro {
         height: 70vh;
     }
@@ -2474,7 +2475,7 @@ font-family: 'Nada Qonita', cursive;
         margin-left: 45px;
     }
 
-    .choosepoint{
+    .choosepoint {
         padding: 25px 0px 0px 0px;
         gap: 15px;
         width: 450px;
@@ -2714,7 +2715,7 @@ font-family: 'Nada Qonita', cursive;
 
 @media (max-width:768px) {
 
-    body{
+    body {
         margin: 0px;
     }
 
@@ -2772,8 +2773,8 @@ font-family: 'Nada Qonita', cursive;
         width: 400px;
     }
 
-    .picture img{
-                margin-top: 12px;
+    .picture img {
+        margin-top: 12px;
         height: 290px;
         width: 290px;
     }
@@ -2979,8 +2980,8 @@ font-family: 'Nada Qonita', cursive;
         gap: 10px;
     }
 
-    .top{
-        top:80px;
+    .top {
+        top: 80px;
     }
 
     .pro {
@@ -3037,7 +3038,7 @@ font-family: 'Nada Qonita', cursive;
         line-height: 20px;
     }
 
-    .list2{
+    .list2 {
         padding: 0px;
     }
 
@@ -3438,11 +3439,11 @@ font-family: 'Nada Qonita', cursive;
         padding: 5px;
     }
 
-    .imgform{
+    .imgform {
         display: none;
     }
 
-   .videoform {
+    .videoform {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -3498,7 +3499,7 @@ font-family: 'Nada Qonita', cursive;
         line-height: normal;
     }
 
-     .video1 video {
+    .video1 video {
         width: 180px;
         height: 180px;
         aspect-ratio: 1/1;
@@ -3510,7 +3511,7 @@ font-family: 'Nada Qonita', cursive;
         aspect-ratio: 1/1;
     }
 
-    .form-field{
+    .form-field {
         padding: 5px;
     }
 
@@ -3591,7 +3592,8 @@ font-family: 'Nada Qonita', cursive;
         display: flex;
         flex-direction: column;
         gap: 36px;
-
+        justify-content: center;
+        align-items: center;
     }
 
     .forms {
@@ -3600,7 +3602,7 @@ font-family: 'Nada Qonita', cursive;
 
     .form {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         padding: 0px;
         width: 280px;
@@ -3828,7 +3830,7 @@ font-family: 'Nada Qonita', cursive;
         font-size: 18px;
         line-height: 24px;
         /* width: 200px; */
-        padding: 22px 0px 75px 0px;
+        padding: 22px 0px 35px 0px;
     }
 
     .symfoot span {
@@ -3839,7 +3841,7 @@ font-family: 'Nada Qonita', cursive;
 
     .recomhead {
         font-size: 20px;
-        padding: 20px;
+        /* padding: 20px; */
         width: 360px;
         line-height: normal;
         text-align: center;
@@ -3849,6 +3851,7 @@ font-family: 'Nada Qonita', cursive;
         display: flex;
         flex-direction: column;
         gap: 32px;
+        padding: 10px;
     }
 
     .recvideo {
@@ -3870,24 +3873,29 @@ font-family: 'Nada Qonita', cursive;
     }
 
     .abtsur {
-        height: 40vh;
+        height: 100vh;
     }
 
     .abtsurp {
         font-size: 20px;
         padding: 20px 0px 20px 0px;
-        width: 400px;
+        /* width: 400px; */
     }
 
     .abtsurdes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 45px;
+        display: flex;
+        /* grid-template-columns: repeat(3, 1fr); */
+        gap: 1px;
         padding: 0px;
     }
 
     .abt {
         text-align: center;
+    }
+
+    .abts{
+        padding: 0px;
+        gap: 0px;
     }
 
     .abt1 {
@@ -3908,13 +3916,23 @@ font-family: 'Nada Qonita', cursive;
     }
 
     .abt h4 {
-        font-size: 14px;
-        width: 150px;
+        font-size: 12px;
+        /* width: 120px; */
+        /* height: 48px; */
+        padding: 5px;
     }
 
     .abt p {
         font-size: 10px;
-        width: 150px;
+        width: 125px;
+        line-height: normal;
+    }
+
+    .abtno{
+        width: 39px;
+        height: 39px;
+        border: 2px solid;
+        font-size: 14px;
     }
 
     .prohead h3 {
@@ -4013,7 +4031,7 @@ font-family: 'Nada Qonita', cursive;
     .choose {
         display: grid;
         width: 360px;
-        height: 850px;
+        height: 790px;
         gap: 20px;
         padding: 10px;
     }
@@ -4101,7 +4119,7 @@ font-family: 'Nada Qonita', cursive;
 
     .doctorpic {
         width: 380px;
-        height: 315px;
+        height: 250px;
     }
 
     .docin {
@@ -4111,17 +4129,17 @@ font-family: 'Nada Qonita', cursive;
     .docincopy {
         display: flex;
         flex-direction: column;
-        height: 1100px;
+        height: 1000px;
     }
 
     .experience {
         display: flex;
         gap: 30px;
-
+padding: 10px;
     }
 
     .doc {
-        padding: 32px 0px 12px 0px;
+        /* padding: 32px 0px 12px 0px; */
         height: auto;
     }
 
@@ -4260,6 +4278,44 @@ font-family: 'Nada Qonita', cursive;
     .nav-bar {
         box-shadow: none;
     }
+
+    .faqs-section {
+        flex-direction: column;
+    }
+
+    .faqs {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .videoform-video {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .form-field input {
+        padding: 12px;
+        width: 230px;
+        font-size: 12px;
+    }
+
+    .book-btn {
+        font-size: 14px;
+        width: 230px;
+        padding: 15px 15px;
+    }
+
+    .banner{
+        gap: 5px;
+    }
+
+    /* .dotor{
+        height: auto;
+    } */
 }
 
 
