@@ -205,11 +205,6 @@
                 </div>
             </div>
             <div class="videoform">
-                <div class="video1">
-                    <video autoplay muted loop playinline>
-                        <source src="pictures/s2.mp4">
-                    </video>
-                </div>
                 <div class="form">
                     <h3 class="title">Get Appointment</h3>
 
@@ -242,10 +237,17 @@
                         </button>
                     </form>
                 </div>
-                <div class="video2">
-                    <video autoplay muted loop playinline>
-                        <source src="pictures/s.mp4">
-                    </video>
+                <div class="videoform-video">
+                    <div class="video1">
+                        <video autoplay muted loop playinline>
+                            <source src="pictures/s2.mp4">
+                        </video>
+                    </div>
+                    <div class="video2">
+                        <video autoplay muted loop playinline>
+                            <source src="pictures/s.mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -495,49 +497,53 @@
                 <p>Shoulder Surgeries We Perform</p>
             </div>
             <div class="abtsurdes">
-                <div class="abts">
-                    <div class="abtno">
-                        <h3>1</h3>
+                <div class="abtfirstrow">
+                    <div class="abts">
+                        <div class="abtno">
+                            <h3>1</h3>
+                        </div>
+                        <div class="abt">
+                            <h4>Rotator Cuff Repair Surgery</h4>
+                            <p>Surgical repair of torn shoulder tendons to restore strength and movement.</p>
+                        </div>
                     </div>
-                    <div class="abt">
-                        <h4>Rotator Cuff Repair Surgery</h4>
-                        <p>Surgical repair of torn shoulder tendons to restore strength and movement.</p>
+                    <div class="abts">
+                        <div class="abtno">
+                            <h3>2</h3>
+                        </div>
+                        <div class="abt">
+                            <h4>Shoulder Artroscopy</h4>
+                            <p>Minimally invasive shoulder surgery to diagnose and treat joint problems accurately.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="abts">
-                    <div class="abtno">
-                        <h3>2</h3>
-                    </div>
-                    <div class="abt">
-                        <h4>Shoulder Artroscopy</h4>
-                        <p>Minimally invasive shoulder surgery to diagnose and treat joint problems accurately.</p>
-                    </div>
-                </div>
-                <div class="abts">
-                    <div class="abtno">
-                        <h3>3</h3>
-                    </div>
-                    <div class="abt">
-                        <h4>Frosen Shoulder treatement</h4>
-                        <p>Surgical and non-Surgical treatement to improve shoulder stiffness and mobility.</p>
-                    </div>
-                </div>
-                <div class="abts">
-                    <div class="abtno">
-                        <h3>4</h3>
-                    </div>
-                    <div class="abt">
-                        <h4>Shoulder Dislocation & instability Surgery</h4>
-                        <p>Repair of damaged ligaments to prevent recurrent shoulder dislocation.</p>
+                    <div class="abts">
+                        <div class="abtno">
+                            <h3>3</h3>
+                        </div>
+                        <div class="abt">
+                            <h4>Frosen Shoulder treatement</h4>
+                            <p>Surgical and non-Surgical treatement to improve shoulder stiffness and mobility.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="abts">
-                    <div class="abtno">
-                        <h3>5</h3>
+                <div class="abtsecondrow">
+                    <div class="abts">
+                        <div class="abtno">
+                            <h3>4</h3>
+                        </div>
+                        <div class="abt">
+                            <h4>Shoulder Dislocation & instability Surgery</h4>
+                            <p>Repair of damaged ligaments to prevent recurrent shoulder dislocation.</p>
+                        </div>
                     </div>
-                    <div class="abt">
-                        <h4>Shoulder Fracture Surgery</h4>
-                        <p>Surgical fixation of shoulder fractures to restore alignment and function.</p>
+                    <div class="abts">
+                        <div class="abtno">
+                            <h3>5</h3>
+                        </div>
+                        <div class="abt">
+                            <h4>Shoulder Fracture Surgery</h4>
+                            <p>Surgical fixation of shoulder fractures to restore alignment and function.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1073,6 +1079,27 @@
                     </div>
                 </div>
             </div>
+            <div class="foot3">
+                <div class="footmenu">
+                    <div class="menu1">
+                        <div>
+                            <p>Privacy Policy</p>
+                        </div>
+                        <div>
+                            <p>Terms of Use</p>
+                        </div>
+                        <div>
+                            <p>Parking Location</p>
+                        </div>
+                        <div>
+                            <p>Clinic Map</p>
+                        </div>
+                    </div>
+                    <div class="menu2">
+                        <p>© 2025 All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footercopy1">
             <div class="foot1">
@@ -1139,7 +1166,42 @@
                     </div>
                 </div>
             </div>
+            <div class="foot4">
+                <div class="footmenu">
+                    <div class="menu1">
+                        <div>
+                            <p>Privacy Policy</p>
+                        </div>
+                        <div>
+                            <p>Terms of Use</p>
+                        </div>
+                        <div>
+                            <p>Parking Location</p>
+                        </div>
+                        <div>
+                            <p>Clinic Map</p>
+                        </div>
+                    </div>
+                    <div class="menu2">
+                        <p>© 2025 All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Popup Form -->
+        <!-- <div class="overlay">
+            <div class="popup">
+                <button class="close-btn" (click)="closePopup()">×</button>
+
+                <h2>Subscribe Now</h2>
+
+                <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
+                    <input type="text" name="name" ngModel placeholder="Your Name" required />
+                    <input type="email" name="email" ngModel placeholder="Your Email" required />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div> -->
     </div>
 </body>
 
