@@ -2444,7 +2444,7 @@ font-family: 'Nada Qonita', cursive;
 
     .choose {
         width: 900px;
-        height: 400px;
+        height: 420px;
         gap: 20px;
         padding: 10px;
     }
@@ -2458,14 +2458,14 @@ font-family: 'Nada Qonita', cursive;
     }
 
     .choosehead h2 {
-        font-size: 28px;
+        font-size: 40px;
         padding: 0px;
-        width: 200px;
+        width: 330px;
         line-height: 0px;
     }
 
     .choosehead span {
-        font-size: 26px;
+        font-size: 40px;
     }
 
     .choosehead img {
@@ -2476,7 +2476,8 @@ font-family: 'Nada Qonita', cursive;
 
     .choosepoint{
         padding: 25px 0px 0px 0px;
-        gap: 25px;
+        gap: 15px;
+        width: 450px;
     }
 
     .points .number {
@@ -2773,8 +2774,8 @@ font-family: 'Nada Qonita', cursive;
 
     .picture img{
                 margin-top: 12px;
-        height: 340px;
-        width: 321px;
+        height: 290px;
+        width: 290px;
     }
 
     .surgerypara {
@@ -2976,6 +2977,10 @@ font-family: 'Nada Qonita', cursive;
 
     .pros {
         gap: 10px;
+    }
+
+    .top{
+        top:80px;
     }
 
     .pro {
