@@ -1,14 +1,12 @@
-import { Component, signal,ElementRef, AfterViewInit, ViewChild, Output, EventEmitter,HostListener  } from '@angular/core';
+import { Component, signal, ElementRef, AfterViewInit, ViewChild, Output, EventEmitter, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-// import { BreakpointObserver,Breakpoints, BreakpointState } from '@angular/cdk/layout';//
-// import { ToastModule } from  '@syncfusion/ej2-angular-notifications';
 import { DOCUMENT } from '@angular/common';
-// import { MatdialogModule} from '@angular/material/dialog';
-import {ChangeDetectionStrategy} from '@angular/core';
-import {form, FormField} from '@angular/forms/signals';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ChangeDetectionStrategy } from '@angular/core';
+import { form, FormField } from '@angular/forms/signals';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { FormPop } from './form-pop/form-pop';
 
 // interface LoginData {
 //   email: string;
@@ -18,7 +16,8 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, FormField,ReactiveFormsModule],
+  standalone: true,
+  imports: [RouterOutlet, CommonModule, FormField, ReactiveFormsModule, FormPop, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -85,7 +84,7 @@ export class app {
   //     });
   //   }, { threshold: 0.5 }); // 50% visible
 
-    // observer.observe(this.counterSection.nativeElement);
+  // observer.observe(this.counterSection.nativeElement);
   // }
 
   // startCounters() {
@@ -119,11 +118,11 @@ export class app {
   ) { }
 
 
-  
-  ngOnInit(): void {
-    this.initForm();
-    this.fetchUserLocation();
-  }
+
+  // ngOnInit(): void {
+  //   this.initForm();
+  //   this.fetchUserLocation();
+  // }
 
   initForm(): void {
     this.appointmentForm = this.fb.group({
@@ -237,7 +236,7 @@ export class app {
       domain_name: 'shoulderreplacementsurgery.in'
     };
 
-  emailjs.send(
+    emailjs.send(
       'service_b8jvt4d',
       'template_rhr950l',
       templateParams,
@@ -276,6 +275,241 @@ export class app {
   //     this.showPopup = true;
   //     this.popupShown = true;
   //   }
+  // }
+
+  // closePopup() {
+  //   this.showPopup = false;
+  // }
+
+  //   showPopup = false;
+  // popupShown = false; // prevents multiple triggers
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  //   if (scrollPosition > 300 && !this.popupShown) {
+  //     this.showPopup = true;
+  //     this.popupShown = true;
+  //   }
+  // }
+
+  // closePopup() {
+  //   this.showPopup = false;
+  // }
+
+
+  // 
+
+
+  //   isVisible = false;
+  // popupShown = false;
+
+  // name = '';
+  // email = '';
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   const scrollPosition =
+  //     window.pageYOffset || document.documentElement.scrollTop;
+
+  //   const pageHeight =
+  //     document.documentElement.scrollHeight -
+  //     document.documentElement.clientHeight;
+
+  //   const scrollPercentage = (scrollPosition / pageHeight) * 100;
+
+  //   if (scrollPercentage > 40 && !this.popupShown) {
+  //     this.isVisible = true;
+  //     this.popupShown = true;
+  //   }
+  // }
+
+  // close() {
+  //   this.isVisible = false;
+  // }
+
+  // submitForm() {
+  //   console.log('Name:', this.name);
+  //   console.log('Email:', this.email);
+  //   this.close();
+  // }
+
+
+  // showPopup = false;
+  // popupShown = false; // to show only once
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+
+  //   const scrollPosition = window.scrollY;
+
+  //   if (scrollPosition > 300 && !this.popupShown) {
+  //     this.showPopup = true;
+  //     this.popupShown = true;
+  //   }
+  // }
+
+  // closePopup() {
+  //   this.showPopup = false;
+  // }
+
+  //  showPopup = false;
+  // popupShown = false;
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+
+  //   const scrollPosition = window.scrollY;
+  //   const screenHeight = window.innerHeight;
+
+  //   // When user reaches second screen
+  //   if (scrollPosition >= screenHeight && !this.popupShown) {
+  //     this.showPopup = true;
+  //     this.popupShown = true;
+  //   }
+  // }
+
+  @ViewChild('appointmentSection', { static: false })
+  appointmentSection!: ElementRef;
+
+  scrollToForm(): void {
+    this.appointmentSection.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
+
+    ngOnInit() {
+    const popupClosed = localStorage.getItem('popupClosed');
+
+    if (!popupClosed) {
+      setTimeout(() => {
+        this.openPopup();
+      }, 500); // small delay for smooth UX
+    } else {
+      this.showFloatingIcon = true;
+    }
+
+     this.initForm();
+    this.fetchUserLocation();
+  }
+  
+  
+    activeFormIndex: number | null = null;
+  popupClosed = false;
+  popupTriggered = false;
+  showFloatingIcon = false;
+    showMessageCard = false;
+  hideMessageAnimation = false;
+
+  toggleForm(index: number) {
+    this.activeIndex = this.activeIndex === index ? null : index;
+  }
+
+
+  isPopupOpen = false;
+
+  openPopup() {
+    this.isPopupOpen = true;
+    this.showFloatingIcon = false;
+  }
+
+ closePopup() {
+    this.isPopupOpen = false;
+    this.showFloatingIcon = true;
+
+    // show message
+    this.showMessageCard = true;
+    this.hideMessageAnimation = false;
+
+    // start fade out after 4 sec
+    setTimeout(() => {
+      this.hideMessageAnimation = true;
+    }, 4000);
+
+    // remove element after animation
+    setTimeout(() => {
+      this.showMessageCard = false;
+    }, 5000);
+
+     localStorage.setItem('popupClosed', 'true');
+  }
+
+  @ViewChild('triggerSection') triggerSection!: ElementRef;
+  
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+
+    if (!this.triggerSection || this.popupTriggered || this.popupClosed) return;
+
+    const rect = this.triggerSection.nativeElement.getBoundingClientRect();
+
+    if (rect.bottom <= window.innerHeight) {
+      this.openPopup();
+      this.popupTriggered = true;
+    }
+  }
+
+
+  // @ViewChild('targetSection') targetSection!: ElementRef;
+  // showPopup = false;
+  // popupShown = false;
+
+  // @HostListener('window:scroll', [])
+  // onScroll() {
+  //       const sectionTop = this.targetSection.nativeElement.getBoundingClientRect().top;
+  //   const windowHeight = window.innerHeight;
+
+  //   if (sectionTop < windowHeight) {
+  //     this.showPopup = true;
+  //     this.popupShown =true;
+  //   }
+  // }
+
+  // positonOfPopup({/
+
+  // })
+
+  // @HostListener('window:scroll', [])
+  // onScroll() {
+  //   if (window.scrollY > 400) {
+  //     this.showPopup = true;
+  //   }
+  // }
+
+  // @ViewChild('section3') section3!: ElementRef;
+  // showPopup = false;
+  // popupShown = false; // so it shows only once
+
+  // @HostListener('window:scroll', [])
+  // onScroll() {
+
+  //   if (!this.popupShown) {
+
+  //     const sectionPosition =
+  //       this.section3.nativeElement.getBoundingClientRect().top;
+
+  //     if (sectionPosition <= window.innerHeight) {
+  //       this.showPopup = true;
+  //       this.popupShown = true;
+  //     }
+  //   }
+  // }
+
+  //   showPopup = false;
+  // popupShown = false;
+
+  // @HostListener('window:scroll', [])
+  // onScroll() {
+  //   if (window.scrollY > 400 && !this.popupShown) {
+  //     this.showPopup = true;
+  //     this.popupShown = true;
+  //   }
+
+  // console.log();
   // }
 
   // closePopup() {
