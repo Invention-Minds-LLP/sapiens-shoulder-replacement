@@ -1,0 +1,112 @@
+/* :host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+} */
+
+
+
+.contact-card {
+    width: 300px;
+    height: 250px;
+    padding: 18px 21px 31px 21px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title {
+    margin-bottom: 12px;
+    color: #000000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Kodchasan;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+    text-transform: capitalize;
+}
+
+.banner-cta{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    display: flex;
+    width: 260px;
+    padding: 14px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #9E9CAD;
+    color: #525050;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+input::placeholder {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 280% */
+    text-transform: uppercase;
+}
+
+.phone-row {
+    display: flex;
+    gap: 6px;
+}
+
+button {
+        display: flex;
+    width: 295px;
+    padding: 14px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #7F0100;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

@@ -35,7 +35,10 @@ body {
     width: 100%;
     height: auto;
     margin-top: 80px;
-    background: linear-gradient(to bottom right, #FFF 0%, #FFD466 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, #FFD466 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, #FFD466 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, #FFD466 50%) top right / 50% 50% no-repeat;
+    background: linear-gradient(to bottom right, #FFF 0%, #FFD466 50%) bottom right / 50% 50% no-repeat, 
+    linear-gradient(to bottom left, #FFF 0%, #FFD466 50%) bottom left / 50% 50% no-repeat, 
+    linear-gradient(to top left, #FFF 0%, #FFD466 50%) top left / 50% 50% no-repeat, 
+    linear-gradient(to top right, #FFF 0%, #FFD466 50%) top right / 50% 50% no-repeat;
 }
 
 .head {
@@ -94,7 +97,7 @@ body {
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
-    padding: 20px;
+    /* padding: 20px; */
     gap: 10px;
 }
 
@@ -102,6 +105,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding:20px;
 }
 
 .title {
@@ -136,6 +140,10 @@ body {
     align-items: center;
     gap: 50px;
     padding: 50px 0px 80px 0px;
+}
+
+.button{
+    padding: 0px 20px;
 }
 
 video {
@@ -288,6 +296,10 @@ video {
     font-weight: 700;
     line-height: 60px;
     /* 136.364% */
+}
+
+.colon{
+    display: none;
 }
 
 .symhead h2 {
@@ -561,7 +573,7 @@ video {
     justify-content: center;
     align-items: center;
     /* flex-direction: column; */
-    gap: 20px;
+    gap: 45px;
     padding: 0px 0px 70px 0px;
 }
 
@@ -579,7 +591,7 @@ video {
     /* background: lightgray -23.152px -207.774px / 103.193% 126.741% no-repeat, linear-gradient(180deg, rgba(255, 243, 243, 0.60) 0%, rgba(255, 219, 186, 0.60) 140.04%); */
     background-image: url("/pictures/doctor.png");
     background-repeat: no-repeat;
-    background-size: 1500px 777px;
+    background-size: 1518px 777px;
     background-position: center;
 }
 
@@ -821,11 +833,11 @@ video {
 /* Experience Badge */
 .exp {
     position: absolute;
-    left: 25px;
-    bottom: 60px;
+    left: -12px;
+    bottom: 65px;
     background: #e10200;
     color: #fff;
-    padding: 10px 20px;
+    padding: 7px 17px;
     border-radius: 40px;
     display: inline-flex;
     align-items: center;
@@ -850,8 +862,8 @@ video {
 .exp .star {
     background: #ffcc00;
     color: #c40000;
-    width: 22px;
-    height: 22px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -868,6 +880,7 @@ video {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    gap: 10px;
 }
 
 .descript h3 {
@@ -950,20 +963,21 @@ video {
     justify-content: center;
     align-content: center;
     /* flex-direction: column; */
-    gap: 76px;
+    gap: 100px;
     padding: 0px 0px 50px 0px;
 }
 
-.abtfirstrow{
+.abtfirstrow {
     display: flex;
     flex-direction: row;
-    gap: 76px;
+    gap: 100px;
 
 }
-.abtsecondrow{
+
+.abtsecondrow {
     display: flex;
     flex-direction: row;
-    gap: 76px;
+    gap: 100px;
 
 }
 
@@ -1114,7 +1128,7 @@ video {
     align-content: center;
     gap: 14px;
     padding: 30px 0px 0px 0px;
-    animation: spin 22s infinite linear;
+    animation: spin 30s infinite linear;
 }
 
 .pro {
@@ -1128,6 +1142,10 @@ video {
     background: #FFF;
     padding: 15px 30px 32px 30px;
     gap: 10px;
+}
+
+.protail:hover .pros{
+    animation-play-state: paused;
 }
 
 
@@ -1171,6 +1189,7 @@ video {
     /* background: lightgray 50% / cover no-repeat; */
     /* padding: 15px 310px 15px 30px; */
 }
+
 
 
 /* Signs */
@@ -1284,7 +1303,7 @@ video {
     align-content: center;
     background: linear-gradient(180deg, #7F0100 0%, #FF6B6A 100%);
     border-radius: 30px;
-    gap: 5px;
+    gap: 50px;
     width: 1300px;
     height: 540px;
     /* margin-bottom: 35px; */
@@ -1294,13 +1313,15 @@ video {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width:550px;
+    padding: 0px 0px 0px 45px;
 }
 
 .choosehead img {
     width: 474px;
     height: 240px;
     border-radius: 12px;
-    margin-left: 100px;
+    /* margin-left:80px; */
     margin-top: 10px;
     background: lightgray 50% / cover no-repeat, #D9D9D9;
 }
@@ -1314,7 +1335,7 @@ video {
     font-weight: 700;
     line-height: 90px;
     margin: 0px;
-    padding: 0px 61px 15px 73px;
+    padding: 0px 0px 15px 0px;
     /* 121.622% */
 }
 
@@ -1332,10 +1353,10 @@ video {
     flex-direction: column;
     gap: 35px;
     margin: 0px;
-    padding: 40px 0px 0px 0px;
+    padding: 40px 40px 0px 0px;
 }
 
-.choosepoints h2 {
+.points h2 {
     color: #FFF;
     font-family: Kodchasan;
     font-size: 36px;
@@ -1344,7 +1365,7 @@ video {
     line-height: normal;
 }
 
-.choose p {
+.points p {
     color: #FFF;
     font-variant-numeric: lining-nums tabular-nums;
     font-family: Sora;
@@ -1352,7 +1373,7 @@ video {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
+    padding: 5px;
 }
 
 .choosepoint img {
@@ -1466,7 +1487,7 @@ p {
 
 .foot1 {
     display: flex;
-    gap: 35px;
+    gap: 90px;
 
 }
 
@@ -1686,7 +1707,7 @@ p {
 
 .footaddimg img {
     width: 400px;
-    height: 160px;
+    height: 190px;
     border-radius: 30px;
     padding: 40px 0px 0px 0px;
 }
@@ -1728,6 +1749,7 @@ p {
     z-index: 1000;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
+
 
 /* LOGO */
 .nav-bar-brand img {
@@ -1837,7 +1859,7 @@ a {
 
 .details {
     width: 100%;
-    height: 50vh;
+    height: 65vh;
 }
 
 .detailscopy {
@@ -1846,7 +1868,7 @@ a {
 
 .faqs-section {
     display: flex;
-    gap: 30px;
+    gap: 150px;
     justify-content: center;
     align-items: center;
     /* background-color: #FEFFEE; */
@@ -1866,7 +1888,8 @@ a {
 
 .clinic-wrapper h3 {
     font-size: 20px;
-    font-family: poppins;
+    font-family: 'Kodchasan';
+    color: rgb(56, 84, 105);
 }
 
 /* Card */
@@ -1882,19 +1905,13 @@ a {
 
 /* Title */
 .clinic-title {
-    font-size: 18px;
+       font-size: 18px;
     font-weight: 700;
     background: linear-gradient(90deg, #ff7a18, #ff9f1c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 6px;
 }
-
-/* Logo title */
-/* .logo-text {
-  font-size: 24px;
-font-family: 'Nada Qonita', cursive;
-} */
 
 /* Time text */
 .clinic-time {
@@ -1915,75 +1932,81 @@ font-family: 'Nada Qonita', cursive;
     text-decoration: none;
 }
 
+.logo-text {
+    font-size: 24px;
+    font-family: 'Nada Qonita', cursive;
+}
+
 .faqs-right-side {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    width: 300px;
-    height: 300px;
+    max-width: 380px;
+    /* height: 350px; */
     aspect-ratio: 1/1;
     border-radius: 20px;
-    background: linear-gradient(180deg, #7F0100 0%, #FF6B6A 100%);
+    background: #fff;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
-    padding: 20px;
+    padding: 30px;
     gap: 10px;
 }
 
 .form2 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 
 .form-text {
-    color: #fff;
+    color: #000000;
     font-family: Kodchasan;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 27px;
     text-align: center;
+    width: 300px;
 }
 
 .faqs-right-side h4 {
-    font-size: 20px;
-    font-family: poppins;
-    color: white;
+    font-size: 32px;
+    font-family: rubik,sans-serif;
+    color: black;
 }
 
 .callback-field input {
     display: flex;
-    width: 260px;
-    padding: 14px 16px;
+    width: 300px;
+    padding: 0px 10px;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
-    border: 2px solid #9E9CAD;
-    color: #525050;
+    border: 2px solid rgba(69, 68, 68, 0.5);
+    color: #060606;
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
-    background-color: #9E9CAD;
+    background: rgba(255, 255, 255, 0.50);
+    height: 48px;
 }
 
 .book-apt-2 {
     display: flex;
-    width: 260px;
-    padding: 14px 10px;
+    width: 300px;
+    height: 48px;
+    padding: 10px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 6px;
-    background: #fff;
-    color: #988f8f;
+    background: #7F0100;
+    color: #fff;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
     line-height: normal;
     border: none;
 }
@@ -1995,7 +2018,7 @@ font-family: 'Nada Qonita', cursive;
     justify-content: center;
     align-items: center;
     /* position: relative; */
-    padding: 50px;
+    padding: 35px;
     width: 100%;
     height: 100vh;
     /* background: #FFFFFF; */
@@ -2022,9 +2045,9 @@ font-family: 'Nada Qonita', cursive;
     /* padding: 2px 60px 26px 40px; */
     border-radius: 10px;
     background: #ffffff;
-    transition: background 0.4s ease;
+    transition: background 0.9s ease;
     height: 77px;
-    width: 980px;
+    width: 870px;
 
 }
 
@@ -2034,7 +2057,7 @@ font-family: 'Nada Qonita', cursive;
             var(--Colors-Neutrals-White, #FFF) -6.81%,
             var(--Colors-Primary-HUE-Purple-100, #F1F0FB) 71.78%); */
     height: 105px;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 
@@ -2042,7 +2065,7 @@ font-family: 'Nada Qonita', cursive;
     position: relative;
     width: 850px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 150px;
     padding: 0px 0px 0px 40px;
@@ -2071,9 +2094,9 @@ font-family: 'Nada Qonita', cursive;
     border-radius: 0 0 12px 12px;
     background: #ffffff;
     transition:
-        max-height 0.3s ease,
-        padding 0.3s ease,
-        background 0.4s ease;
+        max-height 0.5s ease,
+        padding 0.5s ease,
+        background 0.7s ease;
     font-family: Sora;
     font-size: 14px;
     font-style: normal;
@@ -2109,7 +2132,142 @@ font-family: 'Nada Qonita', cursive;
     transition: transform 0.3s ease;
 }
 
+.overlay {
+    z-index: 9999;
+}
 
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-container {
+    background: #fff;
+    width: 343px;
+    height: 300px;
+    max-width: 95%;
+    padding: 20px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.floating-contact {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(73deg, #B22726 49.04%, #EF7F1A 112.37%), #D9D9D9;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chat-message-card {
+    position: fixed;
+    bottom: 70px;
+    right: 90px;
+        background: linear-gradient(96deg, #800201 -10.84%, #CC4038 196.74%);
+    padding:10px;
+    border-radius: 100px;
+    width: 240px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+
+    /* TWO animations */
+    animation:
+        fadeIn 0.4s forwards,
+        floatUpDown 2s ease-in-out infinite;
+}
+
+.msg-text {
+    color: #fff;
+    text-align: center;
+    font-family: Kodchasan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+/* fade out animation */
+.chat-message-card.fade-out {
+    animation:
+        fadeOut 1s forwards,
+        floatUpDown 2s ease-in-out infinite;
+}
+
+/* fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* fade out */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+/* floating movement */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -2124,7 +2282,7 @@ font-family: 'Nada Qonita', cursive;
     }
 
     .intro {
-        height: 70vh;
+        height: 75vh;
     }
 
     .details {
@@ -2661,11 +2819,11 @@ font-family: 'Nada Qonita', cursive;
         top: 110px;
     }
 
-    .imgform {
+    .videoform {
         display: none;
     }
 
-    .videoform {
+    .imgform {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -2677,20 +2835,25 @@ font-family: 'Nada Qonita', cursive;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 300px;
-        height: 300px;
+        width: 290px;
+        height: 290px;
         aspect-ratio: 1/1;
         border-radius: 20px;
         background: #FFF;
         box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
-        padding: 10px;
-        gap: 20px;
+        /* padding: 10px; */
+        gap: 13px;
+    }
+
+    video{
+        width: 290px;
+        height: 290px;
     }
 
     .banner-cta {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
     .title {
@@ -3485,12 +3648,13 @@ font-family: 'Nada Qonita', cursive;
         gap: 0px;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
 
     .title {
         color: #0B1F33;
         font-family: Kodchasan;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
         line-height: 27px;
@@ -3507,7 +3671,7 @@ font-family: 'Nada Qonita', cursive;
         border: 2px solid #9E9CAD;
         color: #525050;
         font-family: Inter;
-        font-size: 12px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -3529,10 +3693,14 @@ font-family: 'Nada Qonita', cursive;
         padding: 5px;
     }
 
+    .button{
+
+    }
+
     .book-btn {
         font-size: 12px;
         width: 140px;
-        padding: 9px 9px;
+        padding: 7px 7px;
     }
 }
 
@@ -3540,11 +3708,12 @@ font-family: 'Nada Qonita', cursive;
 @media (max-width:600px) {
     .intro {
         height: auto;
+        gap:10px
     }
 
-.body{
-    margin: 0px;
-}
+    .body {
+        margin: 0px;
+    }
 
     .footer {
         display: none;
@@ -3609,7 +3778,7 @@ font-family: 'Nada Qonita', cursive;
     .videoform {
         display: flex;
         flex-direction: column;
-        gap: 36px;
+        gap: 28px;
         justify-content: center;
         align-items: center;
     }
@@ -3734,7 +3903,12 @@ font-family: 'Nada Qonita', cursive;
         padding: 12px 0px 0px 0px;
     }
 
-    .symhead span {
+    .dash {
+        display: none;
+    }
+
+    .colon{
+        display: block;
         font-size: 20px;
     }
 
@@ -3883,6 +4057,7 @@ font-family: 'Nada Qonita', cursive;
 
     .recpara {
         font-size: 14px;
+        padding: 0px 0px 10px 0px;
     }
 
     .recdescript2 ul {
@@ -3890,17 +4065,18 @@ font-family: 'Nada Qonita', cursive;
         line-height: 20px;
     }
 
-    .bookbtn{
-        padding: 20px 0px 0px 0px;
+    .bookbtn {
+        padding: 10px 0px 10px 0px;
     }
 
     .abtsur {
-        height: 65vh;
+        height: 70vh;
+        gap: 25px;
     }
 
     .abtsurp {
         font-size: 20px;
-        padding: 20px 0px 20px 0px;
+        /* padding: 20px 0px 20px 0px; */
         /* width: 400px; */
     }
 
@@ -3911,11 +4087,11 @@ font-family: 'Nada Qonita', cursive;
         padding: 0px;
     }
 
-    .abtfirstrow{
+    .abtfirstrow {
         gap: 0px;
     }
 
-    .abtsecondrow{
+    .abtsecondrow {
         gap: 0px;
     }
 
@@ -3923,7 +4099,7 @@ font-family: 'Nada Qonita', cursive;
         text-align: center;
     }
 
-    .abts{
+    .abts {
         padding: 0px;
         gap: 0px;
     }
@@ -3958,7 +4134,7 @@ font-family: 'Nada Qonita', cursive;
         line-height: normal;
     }
 
-    .abtno{
+    .abtno {
         width: 39px;
         height: 39px;
         border: 2px solid;
@@ -4147,6 +4323,10 @@ font-family: 'Nada Qonita', cursive;
         height: 60px;
     }
 
+    .doctor{
+        background-size: cover;
+    }
+
     .doctorpic {
         width: 380px;
         height: 250px;
@@ -4159,13 +4339,13 @@ font-family: 'Nada Qonita', cursive;
     .docincopy {
         display: flex;
         flex-direction: column;
-        height: 855px;
+        height: 885px;
     }
 
     .experience {
         display: flex;
         gap: 30px;
-padding: 10px;
+        padding: 10px;
     }
 
     .doc {
@@ -4266,8 +4446,8 @@ padding: 10px;
     }
 
     .top {
-        right: 12px;
-        top: 115px;
+        right: 7px;
+        top: 45px;
     }
 
     .top p {
@@ -4280,12 +4460,12 @@ padding: 10px;
     }
 
     .exp {
-        bottom: 80px;
+        bottom: 25px;
     }
 
     .exp .star {
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
     }
 
     .exp p {
@@ -4311,6 +4491,11 @@ padding: 10px;
 
     .faqs-section {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .clinic-wrapper{
+        padding: 0px;
     }
 
     .faqs {
@@ -4339,17 +4524,53 @@ padding: 10px;
         padding: 15px 15px;
     }
 
-    .banner{
+    .banner {
         gap: 5px;
     }
 
-    /* .dotor{
-        height: auto;
-    } */
+    .faqs-right-side{
+        width: 365px;
+        height: 320px;
+    }
+
+    .form2{
+        gap: 10px;
+    }
+
+    .form-text{
+        font-size: 18px;
+    }
+
+    .faqs-right-side h4{
+        font-size: 32px;
+    }
+
+    .callback-field input{
+        width: 310px;
+        padding: 10px 10px;
+    }
+
+    .book-apt-2{
+        width: 310px;
+    }
+
+    .footmenu{
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .menu1{
+        font-size: 10px;
+        gap: 15px;
+    }
+
+    .menu1{
+        font-size: 10px;
+    }
 }
 
 
-@media (max-width:310px) {
+@media (max-width:360px) {
 
     body {
         margin: 0px;
@@ -4763,6 +4984,7 @@ padding: 10px;
 
     .abtsur {
         height: 40vh;
+        gap: 10px;
     }
 
     .abtsurp {
@@ -4807,6 +5029,10 @@ padding: 10px;
     .abt p {
         font-size: 10px;
         width: 150px;
+    }
+
+    .abts{
+        width: 120px;
     }
 
     .prohead h3 {
@@ -5046,6 +5272,832 @@ padding: 10px;
 
     .doc {
         padding: 32px 0px 12px 0px;
+        height: auto;
+    }
+
+    .docpic {
+        width: 245px;
+        height: 245px;
+    }
+
+    .docimg img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .descriptpara {
+        display: flex;
+        gap: 32px;
+    }
+
+    .fyear {
+        width: 140px;
+        height: 90px;
+    }
+
+    .fyear p {
+        width: 120px;
+        font-size: 8px;
+        line-height: 15px;
+    }
+
+    .fyear span {
+        font-size: 20px;
+    }
+
+    .syear {
+        width: 140px;
+        height: 90px;
+    }
+
+    .syear p {
+        width: 120px;
+        font-size: 8px;
+        line-height: 15px;
+    }
+
+    .syear span {
+        font-size: 20px;
+    }
+
+    .des2 {
+        font-size: 12px;
+        width: 350px;
+    }
+
+    .descript h3 {
+        font-size: 18px;
+    }
+
+    .des1 {
+        font-size: 12px;
+    }
+
+    .book {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .top {
+        right: 12px;
+        top: 75px;
+    }
+
+    .top p {
+        font-size: 10px;
+    }
+
+    .top .icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .exp {
+        bottom: 60px;
+    }
+
+    .exp .star {
+        width: 15px;
+        height: 15px;
+    }
+
+    .exp p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:330px) {
+
+    body {
+        margin: 0px;
+    }
+
+    .intro {
+        height: auto;
+    }
+
+    .headerdesk {
+        display: none;
+    }
+
+    .headermobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+        background: #FFF;
+    }
+
+    .headimg {
+        padding: 0px;
+    }
+
+    .headimg img {
+        border-width: 4.8px;
+        width: 53px;
+        height: 25px;
+    }
+
+    .headname {
+        font-size: 4.333px;
+    }
+
+    .headdetail {
+        font-size: 3.792px;
+    }
+
+    .headicon img {
+        padding: 4px;
+        border-color: #EF7F1A;
+        border-width: 1px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav {
+        gap: 5.42px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footercopy {
+        display: none;
+    }
+
+    .footercopy1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foot1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head {
+        padding: 10px 0px 15px 0px;
+    }
+
+    .head h1 {
+        width: 350px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 0px;
+    }
+
+    .headline {
+        font-size: 18px;
+
+    }
+
+    .sechead p {
+        width: 290px;
+        /* height: 62px; */
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .paraline {
+        line-height: 15px;
+        font-size: 10px;
+    }
+
+    .surgery {
+        display: grid;
+        gap: 10px;
+    }
+
+    .imgform {
+        display: none;
+    }
+
+    .videoform {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+    
+    .title{
+        font-size: 20px;
+    }
+
+    .forms {
+        padding: 23px 0px 0px 0px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 260px;
+        height: 260px;
+        gap: 15px;
+    }
+
+    .form-field input{
+        width: 215px;
+        font-size: 10px;
+    }
+
+    .book-btn{
+        width: 215px;
+        padding: 12px 11px;
+    }
+
+    .form h2 {
+        font-size: 20px;
+        margin: 0px;
+        text-align: center;
+        padding: 0px 0px 21px 0px;
+    }
+
+    .fill {
+        width: 230px;
+        font-size: 12px;
+    }
+
+    .btn {
+        width: 230px;
+        font-size: 12px;
+    }
+
+    .introvideo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        padding: 0px 0px 21px 0px;
+    }
+
+    .video1 video {
+        width: 135px;
+        height: 135px;
+        aspect-ratio: 1/1;
+    }
+
+    .video2 video {
+        width: 135px;
+        height: 135px;
+        aspect-ratio: 1/1;
+    }
+
+    .sur-sym-recom {
+        height: auto;
+    }
+
+    .surgery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .picture {
+        order: 2;
+    }
+
+    .surgeryexp {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .colon{
+
+    }
+
+
+    .picture img {
+        margin: 0px;
+        height: 240px;
+        width: 240px;
+        /* align-self: center; */
+    }
+
+
+    .exp1 h5 {
+        font-size: 16px;
+        text-align: center;
+        /* width: 333px; */
+    }
+
+    .exp1 h2 {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .exp2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .exp2 p {
+        font-size: 10px;
+        text-align: center;
+        width: 295px;
+        line-height: 18px;
+    }
+
+    .surgerypara {
+        font-size: 10px;
+        width: 295px;
+        line-height: 18px;
+    }
+
+    /* .symptoms{
+        gap: 18px;
+    } */
+
+    .symhead {
+        width: 295px;
+    }
+
+    .symhead h2 {
+        line-height: 22px;
+        text-align: left;
+        font-size: 20px;
+        width: 295px;
+        /* padding: 12px 0px 0px 0px; */
+    }
+
+    .colon {
+        font-size: 20px;
+    }
+
+    .symhead p {
+        font-size: 12px;
+        padding: 10px 0px;
+        text-align: left;
+        width: 295px;
+        font-size: 12px;
+        line-height: 20px;
+        /* padding: 0px; */
+    }
+
+    .symtypes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        /* height: 220px; */
+        gap: 8px;
+        padding: 14px 0px 0px 0px;
+        height: auto;
+    }
+
+    .symtypes img {
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .symtypes p {
+        font-size: 12px;
+        width: 140px;
+    }
+
+
+    .symtype1 {
+        width: 140px;
+        height: 160px;
+        gap: 15px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .symtype2 {
+        width: 140px;
+        height: 160px;
+        gap: 15px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .symtype3 {
+        width: 140px;
+        height: 160px;
+        gap: 15px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .symtype4 {
+        width: 140px;
+        height: 160px;
+        gap: 15px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .symtype5 {
+        width: 140px;
+        height: 160px;
+        gap: 15px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .symtype6 {
+        width: 140px;
+        height:160px;
+        gap: 15px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .symtype7 {
+        width: 145px;
+        height: 160px;
+        gap: 15px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .symtypes:last-child {
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+
+    /* .last{
+        grid-column: 1/-1;
+        justify-content: center;
+        
+    } */
+
+    .symfoot {
+        width: 295px;
+        padding: 0px;
+    }
+
+    .symfoot p {
+        font-size: 12px;
+        line-height: 20px;
+        /* width: 200px; */
+        padding: 15px 0px 0px 0px;
+    }
+
+    .symfoot span {
+        font-size: 12px;
+        opacity: 0.7;
+        /* width: 200px; */
+    }
+
+    .recomhead {
+        font-size: 20px;
+        padding: 20px;
+        width: 360px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .recomdes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .recvideo {
+        width: 295px;
+    }
+
+    .recdescript {
+        width: 295px;
+
+    }
+
+    .recdescript p{
+        padding: 0px 0px 9px 0px;
+    }
+
+    .recpara {
+        font-size: 12px;
+    }
+
+    .recdescript2 ul {
+        font-size: 12px;
+        line-height: 20px;
+        width: 295px;
+        padding: 0px 0px 0px 18px;
+    }
+
+    .abtsur {
+        height: 40vh;
+        gap: 10px;
+    }
+
+    .abtsurp {
+        font-size: 20px;
+        padding: 20px 0px 20px 0px;
+        width: 400px;
+    }
+
+    .abtsurdes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+        padding: 0px;
+    }
+
+    .abt {
+        text-align: center;
+    }
+
+    .abt1 {
+        font-size: 20px;
+        border-radius: 1000px;
+        width: 70px;
+        height: 70px;
+        border: 4px solid #7F0100;
+    }
+
+    .abt2 {
+        font-size: 20px;
+        border-radius: 1000px;
+        width: 70px;
+        height: 70px;
+        border: 4px solid #FFA9A8;
+
+    }
+
+    .abt h4 {
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .abt p {
+        font-size: 10px;
+        width: 150px;
+    }
+
+    .abts{
+        width: 120px;
+    }
+
+    .prohead h3 {
+        font-size: 20px;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .prohead h2 {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .pros {
+        gap: 10px;
+    }
+
+    .pro {
+        width: 230px;
+        height: 240px;
+        padding: 10px;
+    }
+
+    .pro img {
+        width: 47px;
+        height: 47px;
+    }
+
+    .pro h4 {
+        font-size: 20px;
+    }
+
+    .pro p {
+        font-size: 14px;
+        width: 190px;
+    }
+
+    .signs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .signhead p {
+        font-size: 20px;
+        width: 320px;
+        /* padding: 30px 0px 0px 0px; */
+        line-height: normal;
+        height: 60px;
+    }
+
+    .signdes {
+        display: grid;
+        gap: 30px;
+        padding: 20px 0px;
+    }
+
+    .signdetail {
+        width: 320px;
+        height: 340px;
+    }
+
+    .signdetail h4 {
+        font-size: 18px;
+        width: 310px;
+        padding: 10px 0px;
+        margin: auto;
+    }
+
+    .list1 {
+        font-size: 12px;
+        text-align: center;
+        padding: 0px 0px 0px 100px;
+    }
+
+    .list2 ul {
+        font-size: 12px;
+        width: 330px;
+        line-height: 28px;
+        padding: 0px 0px 0px 30px;
+    }
+
+    .signdetail p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .signdetail img {
+        width: 320px;
+    }
+
+    .choice {
+        padding: 10px 0px;
+    }
+
+    .choose {
+        display: grid;
+        width: 330px;
+        height: 850px;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .choosehead {
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .choosehead h2 {
+        font-size: 48px;
+        padding: 0px;
+        width: 325px;
+        line-height: 0px;
+    }
+
+    .choosehead span {
+        font-size: 48px;
+    }
+
+    .choosehead img {
+        width: 310px;
+        height: 310px;
+        margin: 0px;
+    }
+
+    .choosepoint {
+        padding: 0px;
+    }
+
+    .points {
+        width: 300px;
+    }
+
+
+    .points .number {
+        font-size: 12px;
+        width: 27px;
+        height: 30px;
+    }
+
+    .points h2 {
+        font-size: 12px;
+    }
+
+    .points p {
+        font-size: 12px;
+    }
+
+    .faqhead {
+        font-size: 24px;
+        width: 250px;
+    }
+
+    .faq-item {
+        justify-content: center;
+        width: 65px;
+        display: flex;
+        align-items: center;
+    }
+
+    .faqs-part {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .step-col {
+        width: 330px;
+        gap: 0px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+
+    .q-text {
+        font-size: 12px;
+
+    }
+
+    .faq-question {
+        width: 360px;
+        height: 60px;
+    }
+
+    .tyear {
+        width: 140px;
+        height: 90px;
+    }
+
+    .tyear p {
+        width: 120px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .byear {
+        width: 140px;
+        height: 90px;
+    }
+
+    .byear p {
+        width: 120px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .doctorpic {
+        width: 360px;
+        height: 300px;
+    }
+
+    .docin {
+        display: none;
+    }
+
+    .docincopy {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .experience {
+        display: flex;
+        gap: 30px;
+    }
+
+    .experiencesleft {
+        flex-direction: column-reverse;
+        gap: 17px;
+    }
+
+    .experiencesryt {
+        flex-direction: column;
+        gap: 17px;
+
+    }
+
+    .doc {
+        padding: 0px;
         height: auto;
     }
 
