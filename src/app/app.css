@@ -2291,7 +2291,7 @@ a {
     }
 
     .intro {
-        height: 75vh;
+        height: 58vh;
     }
 
     .details {
@@ -2324,7 +2324,7 @@ a {
     }
 
     .head {
-        padding: 0px;
+        padding: 20px 0px 0px 0px;
     }
 
     .head h1 {
@@ -2495,21 +2495,21 @@ a {
         font-size: 16px;
     }
 
-    .recdescript2 ul {
+    .recdescript2 p {
         font-size: 16px;
     }
 
     .abtsur {
-        height: 60vh;
+        height: 45vh;
     }
 
     .abtsurp {
         font-size: 26px;
-        padding: 20px 0px 20px 0px;
+        padding: 0px;
     }
 
     .abtsurdes {
-        gap: 45px;
+        gap: 40px;
         padding: 0px;
     }
 
@@ -2540,8 +2540,15 @@ a {
     }
 
     .abt p {
-        font-size: 10px;
+        font-size: 12px;
         width: 150px;
+    }
+    .abtfirstrow{
+        gap:40px;
+    }
+
+    .abtsecondrow{
+        gap:40px;
     }
 
     .prohead h3 {
@@ -2609,7 +2616,7 @@ a {
         font-size: 13px;
         width: 280px;
         /* height: 100px; */
-        padding: 0px 0px 20px 35px;
+        padding: 0px 20px 20px 12px;
     }
 
     .signdetail p {
@@ -3309,6 +3316,7 @@ a {
 
     .faqs {
         padding: 0px;
+        height: 85vh;
     }
 
     .faqhead {
@@ -3729,6 +3737,39 @@ a {
     .faqs-section {
         gap: 10px;
     }
+
+    .faqs-right-side{
+        width: 350px;
+        height: 350px;
+    }
+
+    .faqs-right-side h4{
+        font-size: 28px;
+    }
+
+    .form-text{
+        font-size: 18px;
+    }
+
+    .callback-field input{
+        width: 280px;
+    }
+
+    .book-apt-2{
+        width: 280px;
+    }
+
+    .clinic-card{
+        width: 325px;
+    }
+
+    .clinic-time{
+        font-size: 12px;
+    }
+
+    .clinic-title{
+        font-size: 16px;
+    }
 }
 
 
@@ -4137,6 +4178,7 @@ a {
 
     .recdescript {
         gap: 10px;
+        width: 375px;
     }
 
     .recpara {
@@ -5625,7 +5667,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .head {
@@ -5979,39 +6021,38 @@ a {
 
     .recdescript p {
         padding: 0px 0px 9px 0px;
+        width: 300px;
+        line-height: 15px;
     }
 
     .recpara {
         font-size: 12px;
     }
 
-    .recdescript2 ul {
-        font-size: 12px;
-        line-height: 20px;
-        width: 295px;
-        padding: 0px 0px 0px 18px;
-    }
-
     .abtsur {
-        height: 40vh;
+        height: 75vh;
         gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .abtsurp {
-        font-size: 20px;
+        font-size: 18px;
         padding: 20px 0px 20px 0px;
-        width: 400px;
+        width: 310px;
     }
 
     .abtsurdes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 45px;
+        display:flex;
+        gap: 15px;
         padding: 0px;
+        flex-direction: column;
     }
 
     .abt {
         text-align: center;
+        gap: 40px;
     }
 
     .abt1 {
@@ -6033,21 +6074,27 @@ a {
 
     .abt h4 {
         font-size: 14px;
-        width: 150px;
+        width: 100px;
     }
 
     .abt p {
         font-size: 10px;
-        width: 150px;
+        width: 100px;
     }
 
     .abts {
         width: 120px;
+        height: 180px;
     }
 
-    /* .prohead{
-        width: 300px;
-    } */
+   .abtno{
+    width: 36px;
+    height: 36px;
+   }
+
+   .abtfirstrow{
+    width: 310px;
+   }
 
     .prohead h3 {
         font-size: 18px;
@@ -6455,5 +6502,9 @@ a {
     .floating-contact {
         width: 50px;
         height: 50px;
+    }
+
+    .footimg img{
+        margin-left: 30%;
     }
 }
