@@ -107,7 +107,7 @@
                         <div class="nav-icon-content">
                             <div class="icon-heading">Sapiens Clinic</div>
                             <div class="icon-subheading"><a>
-                                     +91 78925 56378
+                                    +91 78925 56378
                                 </a></div>
                         </div>
                     </div>
@@ -124,8 +124,8 @@
                         <div class="nav-icon-content">
                             <div class="icon-heading">Fortis Hospital</div>
                             <div class="icon-subheading">
-                              Cunningham Road<br>
-                               +91 9686660310
+                                Cunningham Road<br>
+                                +91 9686660310
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
                             </div>
                             <div class="icon-subheading">
                                 Bannerghatta Road<br>
-                                 +91 96633 67253
+                                +91 96633 67253
                             </div>
                         </div>
                     </div>
@@ -352,12 +352,12 @@
                             <p class="recpara">Shoulder surgery may be advised for patients who:</p>
                         </div>
                         <div class="recdescript2">
-                                <p>• Have rotator cuff tears or tendon injuries</p>
-                                <p>• Suffer from frozen shoulder not improving wit therapy</p>
-                                <p>• Experience repeated shoulder dislocation or instability</p>
-                                <p>• Have shoulder fractures or joint damaes</p>
-                                <p>• Have chronic shoulder pain not relieved by medication or physiotherapy</p>
-                                <p>• Require full shoulder function for work daily activities</p>
+                            <p>• Have rotator cuff tears or tendon injuries</p>
+                            <p>• Suffer from frozen shoulder not improving wit therapy</p>
+                            <p>• Experience repeated shoulder dislocation or instability</p>
+                            <p>• Have shoulder fractures or joint damaes</p>
+                            <p>• Have chronic shoulder pain not relieved by medication or physiotherapy</p>
+                            <p>• Require full shoulder function for work daily activities</p>
                         </div>
                     </div>
                 </div>
@@ -934,24 +934,22 @@
 
                 </section>
             </div>
-            <div class="faqs-part">
-                <div class="faqs">
-                    <div class="faqhead">
-                        <p>FAQs - Shoulder Surgeon in Banglore</p>
-                    </div>
-                    <div class="faq-item" *ngFor="let faq of faqs; let i = index"> <!-- for is used -->
-                        <div class="faq-question" (click)="toggleFAQ(i)" [class.active]="activeIndex === i">
-                            <div class="step-col">
-                                <span class="q-text">{{faq.question}}</span>
-                                <span class="icons" [class.active]="activeIndex === i">
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                </span> <!-- {{}} is used for display ts in html-->
-                            </div>
+            <div class="faqs">
+                <div class="faqhead">
+                    <p>FAQs - Shoulder Surgeon in Banglore</p>
+                </div>
+                <div class="faq-item" *ngFor="let faq of faqs; let i = index"> <!-- for is used -->
+                    <div class="faq-question" (click)="toggleFAQ(i)" [class.active]="activeIndex === i">
+                        <div class="step-col">
+                            <span class="q-text">{{faq.question}}</span>
+                            <span class="icons" [class.active]="activeIndex === i">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </span> <!-- {{}} is used for display ts in html-->
+                        </div>
 
-                            <div class="faq-answer" [class.open]="activeIndex === i">
-                                {{faq.answer}}
-                            </div>
+                        <div class="faq-answer" [class.open]="activeIndex === i">
+                            {{faq.answer}}
                         </div>
                     </div>
                 </div>
