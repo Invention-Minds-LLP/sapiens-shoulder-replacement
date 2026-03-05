@@ -35,10 +35,10 @@ body {
     width: 100%;
     height: auto;
     margin-top: 80px;
-    background: linear-gradient(to bottom right, #FFF 0%, #FFD466 50%) bottom right / 50% 50% no-repeat, 
-    linear-gradient(to bottom left, #FFF 0%, #FFD466 50%) bottom left / 50% 50% no-repeat, 
-    linear-gradient(to top left, #FFF 0%, #FFD466 50%) top left / 50% 50% no-repeat, 
-    linear-gradient(to top right, #FFF 0%, #FFD466 50%) top right / 50% 50% no-repeat;
+    background: linear-gradient(to bottom right, #FFF 0%, #FFD466 50%) bottom right / 50% 50% no-repeat,
+        linear-gradient(to bottom left, #FFF 0%, #FFD466 50%) bottom left / 50% 50% no-repeat,
+        linear-gradient(to top left, #FFF 0%, #FFD466 50%) top left / 50% 50% no-repeat,
+        linear-gradient(to top right, #FFF 0%, #FFD466 50%) top right / 50% 50% no-repeat;
 }
 
 .head {
@@ -105,7 +105,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding:20px;
+    padding: 20px;
 }
 
 .title {
@@ -142,7 +142,7 @@ body {
     padding: 50px 0px 80px 0px;
 }
 
-.button{
+.button {
     padding: 0px 20px;
 }
 
@@ -298,7 +298,7 @@ video {
     /* 136.364% */
 }
 
-.colon{
+.colon {
     display: none;
 }
 
@@ -549,11 +549,17 @@ video {
     line-height: normal;
 }
 
-.recdescript ul {
+.recdescript {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recdescript2 {
     color: #000;
     font-variant-numeric: lining-nums tabular-nums;
     font-family: Sora;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -578,7 +584,7 @@ video {
 }
 
 .recdescript p {
-    padding: 0px 0px 20px 0px;
+    /* padding: 0px 0px 20px 0px; */
     margin: 0px;
 }
 
@@ -1144,7 +1150,7 @@ video {
     gap: 10px;
 }
 
-.protail:hover .pros{
+.protail:hover .pros {
     animation-play-state: paused;
 }
 
@@ -1313,7 +1319,7 @@ video {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width:550px;
+    width: 550px;
     padding: 0px 0px 0px 45px;
 }
 
@@ -1905,7 +1911,7 @@ a {
 
 /* Title */
 .clinic-title {
-       font-size: 18px;
+    font-size: 18px;
     font-weight: 700;
     background: linear-gradient(90deg, #ff7a18, #ff9f1c);
     -webkit-background-clip: text;
@@ -1972,7 +1978,7 @@ a {
 
 .faqs-right-side h4 {
     font-size: 32px;
-    font-family: rubik,sans-serif;
+    font-family: Rubik, sans-serif;
     color: black;
 }
 
@@ -2196,8 +2202,8 @@ a {
     position: fixed;
     bottom: 70px;
     right: 90px;
-        background: linear-gradient(96deg, #800201 -10.84%, #CC4038 196.74%);
-    padding:10px;
+    background: linear-gradient(96deg, #800201 -10.84%, #CC4038 196.74%);
+    padding: 10px;
     border-radius: 100px;
     width: 240px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -2845,7 +2851,7 @@ a {
         gap: 13px;
     }
 
-    video{
+    video {
         width: 290px;
         height: 290px;
     }
@@ -2891,6 +2897,7 @@ a {
 
 
 @media (max-width:768px) {
+
 
     body {
         margin: 0px;
@@ -3069,7 +3076,7 @@ a {
     }
 
     .recomdes {
-        gap: 00px;
+        gap: 16px;
     }
 
     .recvideo {
@@ -3085,20 +3092,21 @@ a {
         font-size: 12px;
     }
 
-    .recdescript2 ul {
+    .recdescript2 {
         font-size: 12px;
-        padding: 0px 0px 0px 24px;
+        /* padding: 0px 0px 0px 24px; */
         width: 390px;
         line-height: 22px;
     }
 
     .abtsur {
         height: auto;
+        gap: 20px;
     }
 
     .abtsurp {
         font-size: 22px;
-        padding: 20px 0px 10px 0px;
+        padding: 0px;
     }
 
     .abtsurdes {
@@ -3116,6 +3124,14 @@ a {
         width: 55px;
         height: 55px;
         border: 3.5px solid #7F0100;
+    }
+
+    .abtfirstrow {
+        gap: 10px;
+    }
+
+    .abtsecondrow {
+        gap: 10px;
     }
 
     .abt2 {
@@ -3162,8 +3178,8 @@ a {
     }
 
     .pro {
-        width: 233px;
-        height: 251px;
+        width: 225px;
+        height: 225px;
         padding: 10px;
     }
 
@@ -3178,7 +3194,7 @@ a {
 
     .pro p {
         font-size: 12px;
-        width: 300px;
+        width: 210px;
     }
 
     .signhead {
@@ -3323,6 +3339,11 @@ a {
 
     .step-col {
         width: 600px;
+        padding: 0px 0px 0px 15px;
+    }
+
+    .faq-answer.open{
+        padding: 0px 0px 0px 15px;
     }
 
     .footer {
@@ -3610,6 +3631,7 @@ a {
 
     .side-menu.open {
         display: block;
+        top: 84px;
     }
 
     .form-field {
@@ -3693,14 +3715,16 @@ a {
         padding: 5px;
     }
 
-    .button{
-
-    }
+    .button {}
 
     .book-btn {
         font-size: 12px;
         width: 140px;
         padding: 7px 7px;
+    }
+
+    .faqs-section {
+        gap: 10px;
     }
 }
 
@@ -3708,7 +3732,7 @@ a {
 @media (max-width:600px) {
     .intro {
         height: auto;
-        gap:10px
+        gap: 10px
     }
 
     .body {
@@ -3907,7 +3931,7 @@ a {
         display: none;
     }
 
-    .colon{
+    .colon {
         display: block;
         font-size: 20px;
     }
@@ -4323,7 +4347,7 @@ a {
         height: 60px;
     }
 
-    .doctor{
+    .doctor {
         background-size: cover;
     }
 
@@ -4494,7 +4518,7 @@ a {
         gap: 20px;
     }
 
-    .clinic-wrapper{
+    .clinic-wrapper {
         padding: 0px;
     }
 
@@ -4502,7 +4526,7 @@ a {
         padding: 20px 0px 0px 0px;
     }
 
-    .videoform-video {
+    .videoform video {
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -4528,44 +4552,130 @@ a {
         gap: 5px;
     }
 
-    .faqs-right-side{
+    .faqs-right-side {
         width: 365px;
         height: 320px;
     }
 
-    .form2{
+    .form2 {
         gap: 10px;
     }
 
-    .form-text{
+    .form-text {
         font-size: 18px;
     }
 
-    .faqs-right-side h4{
+    .faqs-right-side h4 {
         font-size: 32px;
     }
 
-    .callback-field input{
+    .callback-field input {
         width: 310px;
         padding: 10px 10px;
     }
 
-    .book-apt-2{
+    .book-apt-2 {
         width: 310px;
     }
 
-    .footmenu{
+    .footmenu {
         padding: 0px;
         gap: 0px;
     }
 
-    .menu1{
+    .menu1 {
         font-size: 10px;
         gap: 15px;
     }
 
-    .menu1{
+    .menu1 {
         font-size: 10px;
+    }
+}
+
+
+@media (max-width:380px) {
+
+    .abts {
+        width: 125px;
+    }
+
+    .abt p {
+        width: 100px;
+    }
+
+    .abt h4 {
+        width: 123px;
+    }
+
+    .abtsur {
+        height: 64vh;
+    }
+
+    .abtsurdes {
+        gap: 15px;
+    }
+
+    .abtsurp {
+        padding: 0px;
+    }
+
+    .videoform-video {
+        display: flex;
+        gap: 10px;
+        padding: 0px 0px 16px 0px;
+    }
+
+    .video1 video {
+        width: 160px;
+        height: 160px;
+    }
+
+    .video2 video {
+        width: 160px;
+        height: 160px;
+    }
+
+    .surgery {
+        padding: 20px;
+    }
+
+    .symfoot p {
+        font-size: 14px;
+    }
+
+    .symfoot span {
+        font-size: 14px;
+    }
+
+    .recdescript {
+        gap: 0px;
+        width: 350px;
+    }
+
+    .exp {
+        left: 15px;
+    }
+
+    .faqs-right-side {
+        width: 350px;
+    }
+
+    .form-text {
+        font-size: 16px;
+        width: 275px;
+    }
+
+    .faqs-right-side h4 {
+        font-size: 28px;
+    }
+
+    .step-col{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .faq-answer.open{
+        padding: 0px 0px 0px 15px;
     }
 }
 
@@ -4976,7 +5086,7 @@ a {
         font-size: 12px;
     }
 
-    .recdescript2 ul {
+    .recdescript2 p {
         font-size: 12px;
         line-height: 20px;
         width: 350px;
@@ -5031,7 +5141,7 @@ a {
         width: 150px;
     }
 
-    .abts{
+    .abts {
         width: 120px;
     }
 
@@ -5104,7 +5214,7 @@ a {
 
     .list1 {
         font-size: 12px;
-        text-align: center;
+        /* text-align: center; */
         padding: 0px 0px 0px 100px;
     }
 
@@ -5485,8 +5595,8 @@ a {
         gap: 15px;
 
     }
-    
-    .title{
+
+    .title {
         font-size: 20px;
     }
 
@@ -5504,12 +5614,12 @@ a {
         gap: 15px;
     }
 
-    .form-field input{
+    .form-field input {
         width: 215px;
         font-size: 10px;
     }
 
-    .book-btn{
+    .book-btn {
         width: 215px;
         padding: 12px 11px;
     }
@@ -5573,9 +5683,7 @@ a {
         align-items: center;
     }
 
-    .colon{
-
-    }
+    .colon {}
 
 
     .picture img {
@@ -5722,7 +5830,7 @@ a {
 
     .symtype6 {
         width: 140px;
-        height:160px;
+        height: 160px;
         gap: 15px;
         padding: 0px;
         align-items: center;
@@ -5793,7 +5901,7 @@ a {
 
     }
 
-    .recdescript p{
+    .recdescript p {
         padding: 0px 0px 9px 0px;
     }
 
@@ -5857,17 +5965,21 @@ a {
         width: 150px;
     }
 
-    .abts{
+    .abts {
         width: 120px;
     }
 
+    /* .prohead{
+        width: 300px;
+    } */
+
     .prohead h3 {
-        font-size: 20px;
-        padding: 20px 0px 10px 0px;
+        font-size: 18px;
+        padding: 15px 0px 8px 0px;
     }
 
     .prohead h2 {
-        font-size: 16px;
+        font-size: 14px;
         padding: 0px;
     }
 
@@ -5876,23 +5988,23 @@ a {
     }
 
     .pro {
-        width: 230px;
-        height: 240px;
-        padding: 10px;
+        width: 190px;
+        height: 200px;
+        padding: 8px;
     }
 
     .pro img {
-        width: 47px;
-        height: 47px;
+        width: 37px;
+        height: 37px;
     }
 
     .pro h4 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .pro p {
-        font-size: 14px;
-        width: 190px;
+        font-size: 10px;
+        width: 175px;
     }
 
     .signs {
@@ -5903,11 +6015,11 @@ a {
     }
 
     .signhead p {
-        font-size: 20px;
-        width: 320px;
+        font-size: 18px;
+        width: 300px;
         /* padding: 30px 0px 0px 0px; */
         line-height: normal;
-        height: 60px;
+        height: 50px;
     }
 
     .signdes {
@@ -5917,37 +6029,38 @@ a {
     }
 
     .signdetail {
-        width: 320px;
-        height: 340px;
+        width: 300px;
+        height: 320px;
     }
 
     .signdetail h4 {
-        font-size: 18px;
-        width: 310px;
+        font-size: 14px;
+        width: 290px;
         padding: 10px 0px;
         margin: auto;
     }
 
     .list1 {
         font-size: 12px;
-        text-align: center;
+        /* text-align: center; */
         padding: 0px 0px 0px 100px;
+        line-height: 24px;
     }
 
     .list2 ul {
         font-size: 12px;
-        width: 330px;
-        line-height: 28px;
-        padding: 0px 0px 0px 30px;
+        width: 295px;
+        line-height: 20px;
+        padding: 0px 0px 0px 40px;
     }
 
     .signdetail p {
         font-size: 12px;
-        line-height: 24px;
+        line-height: 20px;
     }
 
     .signdetail img {
-        width: 320px;
+        width: 300px;
     }
 
     .choice {
@@ -5956,9 +6069,9 @@ a {
 
     .choose {
         display: grid;
-        width: 330px;
-        height: 850px;
-        gap: 20px;
+        width: 300px;
+        height: 730px;
+        gap: 16px;
         padding: 10px;
     }
 
@@ -5969,19 +6082,19 @@ a {
     }
 
     .choosehead h2 {
-        font-size: 48px;
+        font-size: 46px;
         padding: 0px;
-        width: 325px;
+        width: 290px;
         line-height: 0px;
     }
 
     .choosehead span {
-        font-size: 48px;
+        font-size: 46px;
     }
 
     .choosehead img {
-        width: 310px;
-        height: 310px;
+        width: 280px;
+        height: 250px;
         margin: 0px;
     }
 
@@ -5990,14 +6103,15 @@ a {
     }
 
     .points {
-        width: 300px;
+        width: 290px;
+        gap: 10px;
     }
 
 
     .points .number {
         font-size: 12px;
-        width: 27px;
-        height: 30px;
+        width: 25px;
+        height: 28px;
     }
 
     .points h2 {
@@ -6025,8 +6139,9 @@ a {
     }
 
     .step-col {
-        width: 330px;
+        width: 290px;
         gap: 0px;
+        padding: 0px 0px 0px 10px;
     }
 
     .faq-answer {
@@ -6039,8 +6154,12 @@ a {
     }
 
     .faq-question {
-        width: 360px;
+        width: 300px;
         height: 60px;
+    }
+
+    .faq-answer.open {
+        padding-left: 10px;
     }
 
     .tyear {
@@ -6082,17 +6201,17 @@ a {
 
     .experience {
         display: flex;
-        gap: 30px;
+        gap: 15px;
     }
 
     .experiencesleft {
         flex-direction: column-reverse;
-        gap: 17px;
+        gap: 10px;
     }
 
     .experiencesryt {
         flex-direction: column;
-        gap: 17px;
+        gap: 10px;
 
     }
 
@@ -6114,6 +6233,7 @@ a {
     .descriptpara {
         display: flex;
         gap: 32px;
+        width: 295px;
     }
 
     .fyear {
@@ -6148,15 +6268,20 @@ a {
 
     .des2 {
         font-size: 12px;
-        width: 350px;
+        width: 295px;
     }
 
     .descript h3 {
         font-size: 18px;
     }
 
+    .descript {
+        gap: 6px;
+    }
+
     .des1 {
         font-size: 12px;
+        width: 295px;
     }
 
     .book {
@@ -6165,8 +6290,9 @@ a {
     }
 
     .top {
-        right: 12px;
+        right: 22px;
         top: 75px;
+        padding: 7px 14px;
     }
 
     .top p {
@@ -6179,7 +6305,8 @@ a {
     }
 
     .exp {
-        bottom: 60px;
+        bottom: 50px;
+        left: 26px;
     }
 
     .exp .star {
@@ -6189,5 +6316,68 @@ a {
 
     .exp p {
         font-size: 10px;
+    }
+
+    .clinic-card {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    .clinic-time {
+        font-size: 12px;
+    }
+
+    .clinic-title {
+        font-size: 16px;
+    }
+
+    .faqs-right-side {
+        width: 300px;
+        height: 320px;
+        padding: 0px;
+    }
+
+    .form2 {
+        gap: 8px;
+    }
+
+    .form-text {
+        font-size: 16px;
+        width: 270px;
+    }
+
+    .faqs-right-side h4 {
+        font-size: 28px;
+    }
+
+    .callback-field input {
+        width: 270px;
+    }
+
+    .book-apt-2 {
+        width: 270px;
+    }
+
+    .popup-container {
+        width: 295px;
+        height: 285px;
+    }
+
+    .chat-message-card {
+        width: 180px;
+        padding: 8px;
+    }
+
+    .msg-text {
+        font-size: 12px;
+    }
+
+    .floating-contact {
+        width: 50px;
+        height: 50px;
     }
 }

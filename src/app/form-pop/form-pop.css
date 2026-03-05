@@ -44,7 +44,7 @@ form {
     text-transform: capitalize;
 }
 
-.banner-cta{
+.banner-cta {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -84,7 +84,7 @@ input::placeholder {
 }
 
 button {
-        display: flex;
+    display: flex;
     width: 295px;
     padding: 14px 10px;
     justify-content: center;
@@ -109,4 +109,26 @@ button:hover {
 button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+
+@media (max-width: 330px) {
+    .contact-card {
+        width: 260px;
+        height: 240px;
+    }
+
+    input {
+        width: 240px;
+        padding: 12px 14px;
+    }
+
+    button {
+        width: 270px;
+    }
+
+    .popup-container {
+        width: 260px;
+        height: 240px;
+    }
 }
