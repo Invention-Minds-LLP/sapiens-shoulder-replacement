@@ -3084,7 +3084,7 @@ a {
         height: 160px;
     }
 
-    .recdescript {     
+    .recdescript {
         gap: 10px;
     }
 
@@ -3126,11 +3126,11 @@ a {
         border: 3.5px solid #7F0100;
     }
 
-    .abtfirstrow{
+    .abtfirstrow {
         gap: 10px;
     }
 
-    .abtsecondrow{
+    .abtsecondrow {
         gap: 10px;
     }
 
@@ -3339,6 +3339,11 @@ a {
 
     .step-col {
         width: 600px;
+        padding: 0px 0px 0px 15px;
+    }
+
+    .faq-answer.open{
+        padding: 0px 0px 0px 15px;
     }
 
     .footer {
@@ -3718,7 +3723,7 @@ a {
         padding: 7px 7px;
     }
 
-    .faqs-section{
+    .faqs-section {
         gap: 10px;
     }
 }
@@ -4521,7 +4526,7 @@ a {
         padding: 20px 0px 0px 0px;
     }
 
-    .videoform-video {
+    .videoform video {
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -4591,26 +4596,86 @@ a {
 
 @media (max-width:380px) {
 
-    .abts{
+    .abts {
         width: 125px;
     }
 
-    .abt p{
+    .abt p {
         width: 100px;
     }
-    .abt h4{
+
+    .abt h4 {
         width: 123px;
     }
 
-    .abtsur{
+    .abtsur {
         height: 64vh;
     }
 
-    .abtsurdes{
+    .abtsurdes {
         gap: 15px;
     }
-    .abtsurp{
+
+    .abtsurp {
         padding: 0px;
+    }
+
+    .videoform-video {
+        display: flex;
+        gap: 10px;
+        padding: 0px 0px 16px 0px;
+    }
+
+    .video1 video {
+        width: 160px;
+        height: 160px;
+    }
+
+    .video2 video {
+        width: 160px;
+        height: 160px;
+    }
+
+    .surgery {
+        padding: 20px;
+    }
+
+    .symfoot p {
+        font-size: 14px;
+    }
+
+    .symfoot span {
+        font-size: 14px;
+    }
+
+    .recdescript {
+        gap: 0px;
+        width: 350px;
+    }
+
+    .exp {
+        left: 15px;
+    }
+
+    .faqs-right-side {
+        width: 350px;
+    }
+
+    .form-text {
+        font-size: 16px;
+        width: 275px;
+    }
+
+    .faqs-right-side h4 {
+        font-size: 28px;
+    }
+
+    .step-col{
+        padding: 0px 0px 0px 15px;
+    }
+
+    .faq-answer.open{
+        padding: 0px 0px 0px 15px;
     }
 }
 
