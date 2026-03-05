@@ -1085,15 +1085,16 @@ video {
 /* about procedure */
 
 .pro-signs-choice-faq {
-    /* width: 1440px; */
-    /* height: 6181px; */
     width: 100%;
-    /* height:100v; */
     background: #EEFAFF;
 }
 
+.procedure{
+    width: 100%;
+    height: auto;
+}
+
 .prohead h3 {
-    /* text-align: center; */
     color: #7F0100;
     text-align: center;
     font-family: Kodchasan;
@@ -1148,6 +1149,7 @@ video {
     background: #FFF;
     padding: 15px 30px 32px 30px;
     gap: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
 }
 
 .protail:hover .pros {
@@ -2054,6 +2056,7 @@ a {
     transition: background 0.9s ease;
     height: 77px;
     width: 870px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
 
 }
 
@@ -3759,8 +3762,58 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
+
+    .footimg img{
+        width: 161px;
+        height: 87px;
+        margin-left: 25%;
+    }
+
+    .pic img{
+        width: 35px;
+        height: 35px;
+        border-width: 2px;
+    }
+
+    .docname{
+        width: 85%;
+        padding: 8px;
+        align-items: center;
+        height: 40px;
+    }
+
+    .addline{
+        /* width: 100%; */
+        font-size: 12px;
+    }
+
+    .footmenu{
+        gap: 7px;
+    }
+
+    .docdetail{
+        width: 90%;
+    }
+
+    .nummail, .mailnum{
+        font-size: 16px;
+    }
+
+    .footbook{
+        flex-direction: column;
+    }
+
+    .fb1, .fb2{
+        width: 200px;
+    }
+
+    .fb1, fb2{
+        font-size: 16px;
+    }
+
+
 
     .head {
         padding: 15px 0px 25px 0px;
@@ -3802,9 +3855,10 @@ a {
     .videoform {
         display: flex;
         flex-direction: column;
-        gap: 28px;
+        gap: 36px;
         justify-content: center;
         align-items: center;
+        padding: 13px 0px 0px 0px;
     }
 
     .forms {
@@ -3816,8 +3870,9 @@ a {
         justify-content: space-evenly;
         align-items: center;
         padding: 0px;
-        width: 280px;
-        height: 280px;
+        width: 289px;
+        height: 289px;
+        gap:0px;
     }
 
     .form h2 {
@@ -3837,23 +3892,26 @@ a {
         font-size: 12px;
     }
 
-    .introvideo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        padding: 0px 0px 21px 0px;
+    .videoform-video{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0px 0px 20px 0px;
     }
 
     .video1 video {
         width: 180px;
         height: 180px;
         aspect-ratio: 1/1;
+        border-radius: 7.5px;
     }
 
     .video2 video {
         width: 180px;
         height: 180px;
         aspect-ratio: 1/1;
+        border-radius: 7.5px;
+
     }
 
     .surgery {
@@ -3861,6 +3919,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 15px;
     }
 
     .picture {
@@ -3892,6 +3951,7 @@ a {
     .exp1 h2 {
         font-size: 20px;
         text-align: center;
+        padding: 20px 0pxs;
     }
 
     .exp2 {
@@ -3905,11 +3965,13 @@ a {
         font-size: 12px;
         text-align: center;
         width: 360px;
+        line-height: 28px;
     }
 
     .surgerypara {
         font-size: 12px;
         width: 360px;
+        line-height: 28px;
     }
 
     /* .symptoms{
@@ -3921,10 +3983,10 @@ a {
     }
 
     .symhead h2 {
-        line-height: 0px;
+        line-height: 60px;
         text-align: left;
         font-size: 20px;
-        padding: 12px 0px 0px 0px;
+        padding: 0px;
     }
 
     .dash {
@@ -3938,21 +4000,19 @@ a {
 
     .symhead p {
         font-size: 12px;
-        padding: 10px 0px;
         text-align: left;
         width: 370px;
         font-size: 12px;
         line-height: 24px;
-        /* padding: 0px; */
+        padding: 0px;
     }
 
     .symtypes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        /* height: 220px; */
-        gap: 19px;
-        padding: 14px 0px 0px 0px;
+        gap: 16px;
+        padding: 26px 0px 0px 0px;
         height: auto;
     }
 
@@ -3965,6 +4025,7 @@ a {
     .symtypes p {
         font-size: 14px;
         width: 140px;
+        line-height: 19px;
     }
 
     .symtype1 {
@@ -4045,7 +4106,6 @@ a {
     .symfoot p {
         font-size: 18px;
         line-height: 24px;
-        /* width: 200px; */
         padding: 22px 0px 35px 0px;
     }
 
@@ -4057,7 +4117,7 @@ a {
 
     .recomhead {
         font-size: 20px;
-        /* padding: 20px; */
+        padding: 40px 0px 34px 0px;
         width: 360px;
         line-height: normal;
         text-align: center;
@@ -4067,7 +4127,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 32px;
-        padding: 10px;
+        padding: 0px 0px 65px 0px;
     }
 
     .recvideo {
@@ -4084,9 +4144,9 @@ a {
         padding: 0px 0px 10px 0px;
     }
 
-    .recdescript2 ul {
+    .recdescript2 p {
         font-size: 12px;
-        line-height: 20px;
+        line-height: 28px;
     }
 
     .bookbtn {
@@ -4116,6 +4176,7 @@ a {
     }
 
     .abtsecondrow {
+        justify-content: space-evenly;
         gap: 0px;
     }
 
@@ -4126,6 +4187,7 @@ a {
     .abts {
         padding: 0px;
         gap: 0px;
+        width: 140px;
     }
 
     .abt1 {
@@ -4154,7 +4216,7 @@ a {
 
     .abt p {
         font-size: 10px;
-        width: 125px;
+        width: 115px;
         line-height: normal;
     }
 
@@ -4176,12 +4238,12 @@ a {
     }
 
     .pros {
-        gap: 10px;
+        gap: 23px;
     }
 
     .pro {
         width: 230px;
-        height: 240px;
+        height: 250px;
         padding: 10px;
     }
 
@@ -4192,11 +4254,13 @@ a {
 
     .pro h4 {
         font-size: 20px;
+        line-height: 28px;
     }
 
     .pro p {
         font-size: 14px;
-        width: 190px;
+        width: 185px;
+        line-height: 20px;
     }
 
     .signs {
@@ -4204,12 +4268,17 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 30px 0px 70px 0px;
+    }
+
+
+    .signhead{
+        padding: 0px;
     }
 
     .signhead p {
         font-size: 20px;
         width: 320px;
-        /* padding: 30px 0px 0px 0px; */
         line-height: normal;
         height: 60px;
     }
@@ -4255,7 +4324,7 @@ a {
     }
 
     .choice {
-        padding: 10px 0px;
+        padding: 0px;
     }
 
     .choose {
@@ -4285,12 +4354,13 @@ a {
 
     .choosehead img {
         width: 340px;
-        height: 340px;
+        height: 295px;
         margin: 0px;
     }
 
     .choosepoint {
         padding: 0px;
+        width: 0px;
     }
 
     .points {
@@ -4302,10 +4372,12 @@ a {
         font-size: 12px;
         width: 27px;
         height: 30px;
+        border-radius: 6px;
     }
 
     .points h2 {
         font-size: 12px;
+        width: 270px;
     }
 
     .points p {
@@ -4324,13 +4396,14 @@ a {
         align-items: center;
     }
 
-    .faqs-part {
-        padding: 10px 0px 0px 0px;
-    }
-
     .step-col {
         width: 360px;
         gap: 0px;
+        padding: 0px 0px 0px 15px;
+    }
+
+    .faq-answer.open{
+        padding: 0px 0px 0px 15px;
     }
 
     .faq-answer {
@@ -4344,7 +4417,8 @@ a {
 
     .faq-question {
         width: 360px;
-        height: 60px;
+        height: 42px;
+        border-radius: 3.6px;
     }
 
     .doctor {
@@ -4363,7 +4437,7 @@ a {
     .docincopy {
         display: flex;
         flex-direction: column;
-        height: 885px;
+        height: 800px;
     }
 
     .experience {
@@ -4454,14 +4528,21 @@ a {
     .des2 {
         font-size: 12px;
         width: 350px;
+        line-height: normal;
+    }
+
+    .descript{
+        gap: 0px;
     }
 
     .descript h3 {
         font-size: 18px;
+                padding: 10px 0px 6px 0px;
     }
 
     .des1 {
         font-size: 12px;
+        padding: 0px 28px 17px 28px;
     }
 
     .book {
@@ -4485,6 +4566,7 @@ a {
 
     .exp {
         bottom: 25px;
+        left: 15px;
     }
 
     .exp .star {
@@ -4523,17 +4605,11 @@ a {
     }
 
     .faqs {
-        padding: 20px 0px 0px 0px;
-    }
-
-    .videoform video {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
+        padding: 20px 0px 50px 0px;
     }
 
     .title {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .form-field input {
