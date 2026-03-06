@@ -35,10 +35,7 @@ body {
     width: 100%;
     height: auto;
     margin-top: 80px;
-    background: linear-gradient(to bottom right, #FFF 0%, #FFD466 50%) bottom right / 50% 50% no-repeat,
-        linear-gradient(to bottom left, #FFF 0%, #FFD466 50%) bottom left / 50% 50% no-repeat,
-        linear-gradient(to top left, #FFF 0%, #FFD466 50%) top left / 50% 50% no-repeat,
-        linear-gradient(to top right, #FFF 0%, #FFD466 50%) top right / 50% 50% no-repeat;
+    background: linear-gradient(to bottom right, #FFF 0%, #FFF3D6 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, #FFF3D6 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, #FFF3D6 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, #FFF3D6 50%) top right / 50% 50% no-repeat;;
 }
 
 .head {
@@ -146,13 +143,21 @@ body {
     padding: 0px 20px;
 }
 
-video {
+.video1 video{
     width: 300px;
     height: 300px;
     aspect-ratio: 1/1;
     border-radius: 20px;
     object-fit: cover;
+}
 
+.video2 video{
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    object-fit: cover;
+    transform: rotateY(-173deg);
 }
 
 .headline {
@@ -310,7 +315,7 @@ video {
     font-weight: 700;
     line-height: 60px;
     margin: 0px;
-    padding: 81px 193px 0px 193px;
+    padding: 70px 193px 0px 193px;
 }
 
 .symhead p {
@@ -342,8 +347,7 @@ video {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 133.333% */
-}
+width: 1240px;}
 
 .symtypes {
     display: flex;
@@ -961,7 +965,7 @@ video {
     width: 100%;
     height: auto;
     background: #FFF;
-    gap: 50px;
+    gap: 40px;
 }
 
 .abtsurdes {
@@ -969,21 +973,21 @@ video {
     justify-content: center;
     align-content: center;
     /* flex-direction: column; */
-    gap: 100px;
+    gap: 76px;
     padding: 0px 0px 50px 0px;
 }
 
 .abtfirstrow {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 76px;
 
 }
 
 .abtsecondrow {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 76px;
 
 }
 
@@ -1074,7 +1078,7 @@ video {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     color: #FFA9A8;
     font-family: Arial;
-    font-size: 35px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
@@ -1134,7 +1138,7 @@ video {
     justify-content: center;
     align-content: center;
     gap: 14px;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px 80px 0px;
     animation: spin 30s infinite linear;
 }
 
@@ -1147,7 +1151,7 @@ video {
     height: 180px;
     border-radius: 14px;
     background: #FFF;
-    padding: 15px 30px 32px 30px;
+    padding: 20px 30px 32px 30px;
     gap: 10px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
 }
@@ -1211,7 +1215,7 @@ video {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding: 80px 258px 0px 258px;
+    padding: 0px 258px 0px 258px;
 }
 
 .signdes {
@@ -1270,11 +1274,10 @@ video {
     font-weight: 400;
     line-height: 28px;
     margin: 0px;
-    width: 400px;
 }
 
 .list2 {
-    padding: 0px 9px 30px 30px;
+    padding: 0px 0px 0px 40px;
 }
 
 .signdetail p {
@@ -1329,7 +1332,7 @@ video {
     width: 474px;
     height: 240px;
     border-radius: 12px;
-    /* margin-left:80px; */
+    margin-left:20px;
     margin-top: 10px;
     background: lightgray 50% / cover no-repeat, #D9D9D9;
 }
@@ -1359,9 +1362,9 @@ video {
 .choosepoint {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 33px;
     margin: 0px;
-    padding: 40px 40px 0px 0px;
+    padding: 40px 40px 40px 0px;
 }
 
 .points h2 {
@@ -1382,6 +1385,8 @@ video {
     font-weight: 400;
     line-height: 24px;
     padding: 5px;
+    width
+    :550px;
 }
 
 .choosepoint img {
@@ -1467,7 +1472,7 @@ p {
     font-weight: 600;
     line-height: normal;
     text-align: center;
-    /* padding: 70px 334px 40px 335px; */
+    padding: 70px 0px 20px 0px;
     margin: 0px;
 }
 
@@ -2133,12 +2138,12 @@ a {
     border-bottom: 3px solid black;
     transform: rotate(45deg);
     margin: 20px;
+    transition: transform 0.6s ease;
 }
 
 
-.icons .line::after {
-    transform: rotate(-45deg);
-    transition: transform 0.3s ease;
+.icons.active {
+    transform: rotate(225deg);
 }
 
 .overlay {
@@ -2291,7 +2296,7 @@ a {
     }
 
     .intro {
-        height: 58vh;
+        height: 80vh;
     }
 
     .details {
