@@ -32,10 +32,14 @@ body {
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     margin-top: 80px;
-    background: linear-gradient(to bottom right, #FFF 0%, #FFF3D6 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 0%, #FFF3D6 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 0%, #FFF3D6 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 0%, #FFF3D6 50%) top right / 50% 50% no-repeat;;
+    background:
+        linear-gradient(to bottom right, #FFF 0%, #FFF3D6 50%) bottom right / 51% 51% no-repeat,
+        linear-gradient(to bottom left, #FFF 0%, #FFF3D6 50%) bottom left / 51% 51% no-repeat,
+        linear-gradient(to top left, #FFF 0%, #FFF3D6 50%) top left / 51% 51% no-repeat,
+        linear-gradient(to top right, #FFF 0%, #FFF3D6 50%) top right / 51% 51% no-repeat;
 }
 
 .head {
@@ -54,7 +58,7 @@ body {
 }
 
 .sechead p {
-    width: 100%;
+    max-width: 846px;
     color: #000;
     text-align: center;
     font-family: Sora;
@@ -63,8 +67,6 @@ body {
     font-weight: 400;
     line-height: 24px;
     /* 133.333% */
-    /* margin-left: 290px; */
-
 }
 
 .videoform {
@@ -143,7 +145,7 @@ body {
     padding: 0px 20px;
 }
 
-.video1 video{
+.video1 video {
     width: 300px;
     height: 300px;
     aspect-ratio: 1/1;
@@ -151,7 +153,7 @@ body {
     object-fit: cover;
 }
 
-.video2 video{
+.video2 video {
     width: 300px;
     height: 300px;
     aspect-ratio: 1/1;
@@ -347,7 +349,8 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-width: 1240px;}
+    width: 1240px;
+}
 
 .symtypes {
     display: flex;
@@ -563,7 +566,7 @@ width: 1240px;}
     color: #000;
     font-variant-numeric: lining-nums tabular-nums;
     font-family: Sora;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -1093,7 +1096,7 @@ width: 1240px;}
     background: #EEFAFF;
 }
 
-.procedure{
+.procedure {
     width: 100%;
     height: auto;
 }
@@ -1332,7 +1335,7 @@ width: 1240px;}
     width: 474px;
     height: 240px;
     border-radius: 12px;
-    margin-left:20px;
+    margin-left: 20px;
     margin-top: 10px;
     background: lightgray 50% / cover no-repeat, #D9D9D9;
 }
@@ -1385,8 +1388,7 @@ width: 1240px;}
     font-weight: 400;
     line-height: 24px;
     padding: 5px;
-    width
-    :550px;
+    width: 550px;
 }
 
 .choosepoint img {
@@ -1514,7 +1516,7 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    /* gap: 50px; */
+    gap: 17px;
     /* width: 500px; */
     /* align-items: center; */
     /* padding: 70px 10px 17px 110px; */
@@ -1533,15 +1535,25 @@ p {
     border-radius: 18px;
 }
 
-.pic img {
+.pic {
     border: solid;
     border-radius: 50%;
     padding: 10px;
     border-color: #EF7F1A;
-    border-width: 1px;
+    border-width: 2px;
     width: 44px;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.pic img {
+    color: #e77f1a;
+    width: 24px;
+    height: auto;
+}
+
 
 .phone {
     display: flex;
@@ -2081,7 +2093,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 150px;
+    gap: 20px;
     padding: 0px 0px 0px 40px;
 }
 
@@ -2307,22 +2319,17 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* width: 100%; */
-        /* height:auto; */
     }
 
 
     .faqs-section {
         flex-direction: row;
+        gap: 80px;
     }
 
     .clinic-wrapper h3 {
         font-size: 18px;
     }
-
-    /* .clinic-wrapper{
-        width: 1000px;
-    } */
 
     .footercopy1 {
         display: none;
@@ -2399,7 +2406,8 @@ a {
     .symtypes {
         height: auto;
         gap: 8px;
-        padding: 14px 0px 0px 0px;
+        padding: 0px;
+        margin-top: 24px;
     }
 
     .symtypes img {
@@ -2411,6 +2419,7 @@ a {
     .symtypes p {
         font-size: 12px;
         width: 100px;
+        line-height: 18px;
     }
 
     .symtype1 {
@@ -2465,17 +2474,17 @@ a {
 
     .symfoot {
         width: 800px;
-        padding: 20px;
+        padding: 10px;
+        margin-top: 30px;
     }
 
     .symfoot p {
+        width: 800px;
         font-size: 16px;
-        /* width: 200px; */
     }
 
     .symfoot span {
         font-size: 16px;
-        /* width: 200px; */
     }
 
     .recomhead {
@@ -2505,7 +2514,7 @@ a {
     }
 
     .abtsur {
-        height: 45vh;
+        height: 60vh;
     }
 
     .abtsurp {
@@ -2548,12 +2557,13 @@ a {
         font-size: 12px;
         width: 150px;
     }
-    .abtfirstrow{
-        gap:40px;
+
+    .abtfirstrow {
+        gap: 40px;
     }
 
-    .abtsecondrow{
-        gap:40px;
+    .abtsecondrow {
+        gap: 40px;
     }
 
     .prohead h3 {
@@ -2568,6 +2578,7 @@ a {
 
     .pros {
         gap: 10px;
+        padding: 30px 0px 80px 0px;
     }
 
     .pro {
@@ -2592,7 +2603,7 @@ a {
 
     .signhead {
         font-size: 26px;
-        padding: 30px 0px 0px 0px;
+        padding: 0px;
     }
 
     .signdes {
@@ -2637,55 +2648,49 @@ a {
     }
 
     .choose {
-        width: 900px;
-        height: 420px;
-        gap: 20px;
-        padding: 10px;
+        flex-direction: column;
+        width: 700px;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 
     .choosehead {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
+        width: 500px;
+        padding: 0px 0px 0px 20px;
     }
 
     .choosehead h2 {
-        font-size: 40px;
-        padding: 0px;
-        width: 330px;
-        line-height: 0px;
+        font-size: 50px;
     }
 
     .choosehead span {
-        font-size: 40px;
+        font-size: 74px;
     }
 
     .choosehead img {
-        width: 250px;
-        height: 150px;
-        margin-left: 45px;
+        width: 425px;
+        height: 210px;
+        margin-left: 4px;
     }
 
     .choosepoint {
-        padding: 25px 0px 0px 0px;
-        gap: 15px;
-        width: 450px;
+        gap: 13px;
     }
 
-    .points .number {
-        font-size: 18px;
-        width: 50px;
-        height: 50px;
+    .number {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
     }
 
     .points h2 {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .points p {
-        font-size: 14px;
+        width: 480px;
     }
 
     .faqhead {
@@ -2731,10 +2736,11 @@ a {
     }
 
     .docdetail p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .docdetail {
+        padding: 10px 0px 10px 0px;
         width: 250px;
     }
 
@@ -2749,16 +2755,17 @@ a {
 
     .footbook {
         gap: 8px;
+        flex-direction: column;
     }
 
     .fb1 {
-        width: 100px;
+        width: 200px;
         /* padding: 0px; */
         height: 40px;
     }
 
     .fb2 {
-        width: 100px;
+        width: 200px;
         /* padding: 0px; */
         height: 40px;
     }
@@ -2848,7 +2855,7 @@ a {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        padding: 30px;
+        padding: 20px;
     }
 
     .form {
@@ -2995,6 +3002,7 @@ a {
     .symhead p {
         font-size: 12px;
         padding: 0px;
+        margin-top: 0px;
     }
 
     .symtypes {
@@ -3003,15 +3011,16 @@ a {
         gap: 6px;
         padding: 14px 0px 0px 0px;
         height: auto;
+        margin-top: 0px;
     }
 
     .symtypes img {
-        height: 23px;
-        width: 23px;
+        height: 26px;
+        width: 26px;
     }
 
     .symtypes p {
-        font-size: 10px;
+        font-size: 14px;
         width: 150px;
         line-height: 14px;
 
@@ -3019,70 +3028,75 @@ a {
 
     .symtype1 {
         width: 230px;
-        height: 90px;
-        padding: 16px 0 47.982px 0;
+        height: auto;
+        padding: 16px 0 16px 0;
         gap: 10px;
-
+        justify-content: center;
     }
 
     .symtype2 {
         width: 230px;
-        height: 90px;
-        padding: 16px 0 47.982px 0;
+        height: auto;
+        padding: 16px 0 16px 0;
         gap: 10px;
+        justify-content: center;
     }
 
     .symtype3 {
         gap: 10px;
         width: 230px;
-        height: 90px;
-        padding: 16px 0 47.982px 0;
+        height: auto;
+        padding: 16px 0 16px 0;
+        justify-content: center;
     }
 
     .symtype4 {
         width: 230px;
-        height: 90px;
-        padding: 16px 0 47.982px 0;
+        height: auto;
+        padding: 16px 0 16px 0;
         gap: 10px;
-
+        justify-content: center;
     }
 
     .symtype5 {
         width: 230px;
-        height: 90px;
-        padding: 16px 0 47.982px 0;
+        height: auto;
+        padding: 16px 0 16px 0;
         gap: 10px;
-
+        justify-content: center;
     }
 
     .symtype6 {
         width: 230px;
-        height: 90px;
-        padding: 16px 0 47.982px 0;
+        height: auto;
+        padding: 16px 0 16px 0;
         gap: 10px;
+        justify-content: center;
     }
 
     .symtype7 {
         width: 230px;
-        height: 90px;
-        padding: 16px 0 47.982px 0;
+        height: auto;
+        padding: 16px 0 16px 0;
         gap: 10px;
-
+        justify-content: center;
     }
 
     .symfoot {
         width: 600px;
         padding: 30px 0px 0px 0px;
+        margin-top: 0px;
     }
 
     .symfoot p {
         font-size: 12px;
-        /* width: 200px; */
+        width: 600px;
+        line-height: 20px;
     }
 
     .symfoot span {
         font-size: 12px;
-        /* width: 200px; */
+        width: 600px;
     }
 
     .recomhead {
@@ -3091,7 +3105,8 @@ a {
     }
 
     .recomdes {
-        gap: 16px;
+        gap: 36px;
+        flex-direction: column-reverse;
     }
 
     .recvideo {
@@ -3103,20 +3118,27 @@ a {
         gap: 10px;
     }
 
+    .recdescript2 p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
     .recpara {
-        font-size: 12px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .recdescript2 {
         font-size: 12px;
         /* padding: 0px 0px 0px 24px; */
-        width: 390px;
+        width: 400px;
         line-height: 22px;
     }
 
     .abtsur {
         height: auto;
         gap: 20px;
+        padding: 40px;
     }
 
     .abtsurp {
@@ -3186,6 +3208,7 @@ a {
 
     .pros {
         gap: 10px;
+        padding: 30px 0px 30px 0px;
     }
 
     .top {
@@ -3248,6 +3271,7 @@ a {
 
     .list2 {
         padding: 0px;
+        padding: 0px 0px 20px 20px;
     }
 
     .signdetail p {
@@ -3259,7 +3283,7 @@ a {
         width: 230px;
     }
 
-    .choice {
+    /* .choice {
         padding: 10px 0px;
     }
 
@@ -3268,6 +3292,7 @@ a {
         height: 325px;
         gap: 2px;
         padding: 10px;
+        flex-direction: column;
     }
 
     .choosehead {
@@ -3276,9 +3301,9 @@ a {
         justify-content: center;
         align-items: center;
         padding: 0px;
-    }
+    } */
 
-    .choosehead h2 {
+    /* .choosehead h2 {
         font-size: 50px;
         padding: 0px;
         width: 350px;
@@ -3298,9 +3323,9 @@ a {
         width: 230px;
         height: 130px;
         margin-left: 0px;
-    }
+    } */
 
-    .points .number {
+    /* .points .number {
         font-size: 14px;
         width: 40px;
         height: 40px;
@@ -3312,12 +3337,12 @@ a {
 
     .points h2 {
         font-size: 18px;
-    }
+    } */
 
-    .points p {
+    /* .points p {
         font-size: 10px;
         line-height: 15px;
-    }
+    } */
 
     .faqs {
         padding: 0px;
@@ -3326,6 +3351,7 @@ a {
 
     .faqhead {
         font-size: 22px;
+        padding: 30px 0px 10px 0px;
     }
 
     .faq-item {
@@ -3358,7 +3384,7 @@ a {
         padding: 0px 0px 0px 15px;
     }
 
-    .faq-answer.open{
+    .faq-answer.open {
         padding: 0px 0px 0px 15px;
     }
 
@@ -3378,7 +3404,8 @@ a {
     .imgphonemail {
         display: flex;
         flex-direction: row;
-        gap: 190px;
+        gap: 40px;
+        align-items: center;
     }
 
     .foot2 {
@@ -3389,11 +3416,11 @@ a {
     .footdet {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 40px;
     }
 
     .addline {
-        font-size: 10px;
+        font-size: 14px;
         width: 250px;
     }
 
@@ -3404,8 +3431,8 @@ a {
     }
 
     .footimg img {
-        width: 85px;
-        height: 55px;
+        width: 150px;
+        height: auto;
     }
 
     .footadd {
@@ -3421,8 +3448,8 @@ a {
         padding: 4px;
         border-color: #EF7F1A;
         border-width: 1px;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: auto;
     }
 
     .nummail {
@@ -3442,7 +3469,7 @@ a {
     }
 
     .docname {
-        width: 250px;
+        width: 265px;
     }
 
     .docname p {
@@ -3500,12 +3527,15 @@ a {
         align-items: center;
     }
 
-    .doctor {
-        height: auto;
-    }
 
     .abts {
-        padding: 0px 0px 55px 0px;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .exp{
+        left: 40px;
+        bottom: 45px;
     }
 
     .experience {
@@ -3514,7 +3544,7 @@ a {
         justify-content: center;
         align-items: center;
         gap: 7px;
-        padding: 32px;
+        padding: 20px;
     }
 
     .experiencesleft {
@@ -3617,6 +3647,9 @@ a {
         font-size: 16px;
     }
 
+    .bookbtn {
+        padding: 0px;
+    }
 
     .book {
         font-size: 12px;
@@ -3625,7 +3658,7 @@ a {
     }
 
     .doctorpic {
-        height: 300px;
+        height: 290px;
     }
 
     .nav-bar {
@@ -3731,7 +3764,9 @@ a {
         padding: 5px;
     }
 
-    .button {}
+    .footmeu{
+        padding: 30px;
+    }
 
     .book-btn {
         font-size: 12px;
@@ -3741,38 +3776,39 @@ a {
 
     .faqs-section {
         gap: 10px;
+        flex-direction: column;
     }
 
-    .faqs-right-side{
+    .faqs-right-side {
         width: 350px;
         height: 350px;
     }
 
-    .faqs-right-side h4{
+    .faqs-right-side h4 {
         font-size: 28px;
     }
 
-    .form-text{
+    .form-text {
         font-size: 18px;
     }
 
-    .callback-field input{
+    .callback-field input {
         width: 280px;
     }
 
-    .book-apt-2{
+    .book-apt-2 {
         width: 280px;
     }
 
-    .clinic-card{
+    .clinic-card {
         width: 325px;
     }
 
-    .clinic-time{
+    .clinic-time {
         font-size: 12px;
     }
 
-    .clinic-title{
+    .clinic-title {
         font-size: 16px;
     }
 }
@@ -3811,51 +3847,54 @@ a {
         align-items: flex-start;
     }
 
-    .footimg img{
+    .footimg img {
         width: 161px;
         height: 87px;
         margin-left: 25%;
     }
 
-    .pic img{
+    .pic img {
         width: 35px;
         height: 35px;
         border-width: 2px;
     }
 
-    .docname{
+    .docname {
         width: 85%;
         padding: 8px;
         align-items: center;
         height: 40px;
     }
 
-    .addline{
+    .addline {
         /* width: 100%; */
         font-size: 12px;
     }
 
-    .footmenu{
+    .footmenu {
         gap: 7px;
     }
 
-    .docdetail{
+    .docdetail {
         width: 90%;
     }
 
-    .nummail, .mailnum{
+    .nummail,
+    .mailnum {
         font-size: 16px;
     }
 
-    .footbook{
+    .footbook {
         flex-direction: column;
     }
 
-    .fb1, .fb2{
+    .fb1,
+    .fb2 {
         width: 200px;
     }
 
-    .fb1, fb2{
+    .fb1,
+    fb2 {
         font-size: 16px;
     }
 
@@ -3918,7 +3957,7 @@ a {
         padding: 0px;
         width: 289px;
         height: 289px;
-        gap:0px;
+        gap: 0px;
     }
 
     .form h2 {
@@ -3938,7 +3977,7 @@ a {
         font-size: 12px;
     }
 
-    .videoform-video{
+    .videoform-video {
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -4150,20 +4189,21 @@ a {
     }
 
     .symfoot p {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 24px;
         padding: 22px 0px 35px 0px;
+        width: auto;
     }
 
     .symfoot span {
-        font-size: 18px;
+        font-size: 14px;
         opacity: 0.7;
         /* width: 200px; */
     }
 
     .recomhead {
         font-size: 20px;
-        padding: 40px 0px 34px 0px;
+        padding: 10px 0px 34px 0px;
         width: 360px;
         line-height: normal;
         text-align: center;
@@ -4193,7 +4233,7 @@ a {
 
     .recdescript2 p {
         font-size: 12px;
-        line-height: 28px;
+        line-height: 16px;
     }
 
     .bookbtn {
@@ -4319,7 +4359,7 @@ a {
     }
 
 
-    .signhead{
+    .signhead {
         padding: 0px;
     }
 
@@ -4356,9 +4396,9 @@ a {
 
     .list2 ul {
         font-size: 14px;
-        width: 360px;
+        width: 340px;
         line-height: 28px;
-        padding: 0px 0px 0px 30px;
+        padding: 0px 0px 0px 15px;
     }
 
     .signdetail p {
@@ -4386,6 +4426,7 @@ a {
         padding: 0px;
         display: grid;
         grid-template-columns: 1fr;
+
     }
 
     .choosehead h2 {
@@ -4393,6 +4434,7 @@ a {
         padding: 0px;
         width: 340px;
         line-height: 0px;
+        margin-left: 85px;
     }
 
     .choosehead span {
@@ -4400,14 +4442,15 @@ a {
     }
 
     .choosehead img {
-        width: 340px;
+        width: 334px;
         height: 295px;
-        margin: 0px;
+        margin-left: 84px;
     }
 
     .choosepoint {
         padding: 0px;
         width: 0px;
+        margin-left: 85px;
     }
 
     .points {
@@ -4429,6 +4472,8 @@ a {
 
     .points p {
         font-size: 12px;
+        width: 300px;
+        line-height: 20px;
     }
 
     .faqhead {
@@ -4449,7 +4494,7 @@ a {
         padding: 0px 0px 0px 15px;
     }
 
-    .faq-answer.open{
+    .faq-answer.open {
         padding: 0px 0px 0px 15px;
     }
 
@@ -4484,7 +4529,7 @@ a {
     .docincopy {
         display: flex;
         flex-direction: column;
-        height: 800px;
+        height: auto;
     }
 
     .experience {
@@ -4578,13 +4623,13 @@ a {
         line-height: normal;
     }
 
-    .descript{
+    .descript {
         gap: 0px;
     }
 
     .descript h3 {
         font-size: 18px;
-                padding: 10px 0px 6px 0px;
+        padding: 10px 0px 6px 0px;
     }
 
     .des1 {
@@ -4613,7 +4658,7 @@ a {
 
     .exp {
         bottom: 25px;
-        left: 15px;
+        left: 50px;
     }
 
     .exp .star {
@@ -4793,11 +4838,11 @@ a {
         font-size: 28px;
     }
 
-    .step-col{
+    .step-col {
         padding: 0px 0px 0px 15px;
     }
 
-    .faq-answer.open{
+    .faq-answer.open {
         padding: 0px 0px 0px 15px;
     }
 }
@@ -6049,7 +6094,7 @@ a {
     }
 
     .abtsurdes {
-        display:flex;
+        display: flex;
         gap: 15px;
         padding: 0px;
         flex-direction: column;
@@ -6092,14 +6137,14 @@ a {
         height: 180px;
     }
 
-   .abtno{
-    width: 36px;
-    height: 36px;
-   }
+    .abtno {
+        width: 36px;
+        height: 36px;
+    }
 
-   .abtfirstrow{
-    width: 310px;
-   }
+    .abtfirstrow {
+        width: 310px;
+    }
 
     .prohead h3 {
         font-size: 18px;
@@ -6509,7 +6554,7 @@ a {
         height: 50px;
     }
 
-    .footimg img{
+    .footimg img {
         margin-left: 30%;
     }
 }
