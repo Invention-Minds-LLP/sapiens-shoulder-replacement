@@ -268,6 +268,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    margin-top: 10PX;
     /* 175% */
 }
 
@@ -599,7 +600,7 @@ body {
 
 .doctor {
     width: 100%;
-    height: 777px;
+    height: auto;
     /* background-color: darkgrey; */
     /* background: lightgray -23.152px -207.774px / 103.193% 126.741% no-repeat, linear-gradient(180deg, rgba(255, 243, 243, 0.60) 0%, rgba(255, 219, 186, 0.60) 140.04%); */
     background-image: url("/pictures/doctor.png");
@@ -846,7 +847,7 @@ body {
 /* Experience Badge */
 .exp {
     position: absolute;
-    left: -12px;
+    left: 30px;
     bottom: 65px;
     background: #e10200;
     color: #fff;
@@ -934,7 +935,7 @@ body {
 }
 
 .bookbtn {
-    padding: 20px 0px 80px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 .book {
@@ -1338,6 +1339,7 @@ body {
     margin-left: 20px;
     margin-top: 10px;
     background: lightgray 50% / cover no-repeat, #D9D9D9;
+    object-fit: cover;
 }
 
 .choosehead h2 {
@@ -1390,6 +1392,11 @@ body {
     padding: 5px;
     width: 550px;
 }
+
+/* .choosepoint{
+    width: 300px;
+    margin-left: -200px;
+} */
 
 .choosepoint img {
     display: flex;
@@ -1958,7 +1965,7 @@ a {
 }
 
 .logo-text {
-    font-size: 24px;
+    font-size: 28px;
     font-family: 'Nada Qonita', cursive;
 }
 
@@ -2102,7 +2109,7 @@ a {
     flex: 1;
     color: #000;
     font-family: Kodchasan;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -2124,7 +2131,7 @@ a {
         padding 0.5s ease,
         background 0.7s ease;
     font-family: Sora;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -2379,6 +2386,7 @@ a {
 
     .exp2 p {
         font-size: 16px;
+        margin-top: 10PX;
     }
 
     .surgerypara {
@@ -2633,6 +2641,7 @@ a {
         width: 280px;
         /* height: 100px; */
         padding: 0px 20px 20px 12px;
+        line-height: 24px;
     }
 
     .signdetail p {
@@ -2973,6 +2982,7 @@ a {
         font-size: 10px;
         line-height: 20px;
         width: 400px;
+        margin-top: 10px;
     }
 
     .exp2 {
@@ -3648,7 +3658,7 @@ a {
     }
 
     .bookbtn {
-        padding: 0px;
+        padding: 0px 0px 20px;
     }
 
     .book {
@@ -3808,9 +3818,6 @@ a {
         font-size: 12px;
     }
 
-    .clinic-title {
-        font-size: 16px;
-    }
 }
 
 
@@ -4050,7 +4057,7 @@ a {
         font-size: 12px;
         text-align: center;
         width: 360px;
-        line-height: 28px;
+        line-height: 24px;margin-top: 10px;
     }
 
     .surgerypara {
@@ -4477,8 +4484,12 @@ a {
     }
 
     .faqhead {
-        font-size: 24px;
+        font-size: 22px;
         width: 250px;
+    }
+
+    .logo-text{
+        font-size: 22px;
     }
 
     .faq-item {
@@ -4503,7 +4514,7 @@ a {
     }
 
     .q-text {
-        font-size: 12px;
+        font-size: 14px;
 
     }
 
@@ -4536,6 +4547,7 @@ a {
         display: flex;
         gap: 30px;
         padding: 10px;
+        margin-top: 5px;
     }
 
     .doc {
@@ -4621,6 +4633,7 @@ a {
         font-size: 12px;
         width: 350px;
         line-height: normal;
+        margin-top: 10px;
     }
 
     .descript {
@@ -4634,7 +4647,7 @@ a {
 
     .des1 {
         font-size: 12px;
-        padding: 0px 28px 17px 28px;
+        padding: 0px 28px 0px 28px;
     }
 
     .book {
@@ -4822,7 +4835,7 @@ a {
     }
 
     .exp {
-        left: 15px;
+        left: 55px;
     }
 
     .faqs-right-side {
@@ -4844,6 +4857,46 @@ a {
 
     .faq-answer.open {
         padding: 0px 0px 0px 15px;
+    }
+
+    .surgerypara, .exp2 p{
+        line-height: 22px;
+        margin-top: 10px;
+        text-align : center;
+    }
+
+    .symhead p{
+        max-width: 364px;
+        font-size: 14px;
+    }
+
+    .des2{
+        margin-top: 10px;
+    }
+
+    .logo-text{
+        font-size: 24px;
+    }
+
+    .faqhead{
+        font-size: 22px;
+    }
+
+    .footmenu{
+        gap: 6px;
+    }
+
+    .footercopy1{
+        padding: 20px;
+        gap: 27px;
+    }
+
+    .q-text{
+        font-size: 14px;
+    }
+
+    .nummail, .mailnum{
+        font-size: 12px;
     }
 }
 
@@ -5070,6 +5123,8 @@ a {
         font-size: 10px;
         text-align: center;
         width: 340px;
+        margin-top: 10px;
+
     }
 
     .surgerypara {
@@ -5486,7 +5541,7 @@ a {
     }
 
     .q-text {
-        font-size: 12px;
+        font-size: 14px;
 
     }
 
@@ -5535,6 +5590,7 @@ a {
     .experience {
         display: flex;
         gap: 30px;
+        margin-top: 5px;
     }
 
     .experiencesleft {
@@ -5792,6 +5848,10 @@ a {
         padding: 12px 11px;
     }
 
+    .poitns p{
+        width: 270px;
+    }
+
     .form h2 {
         font-size: 20px;
         margin: 0px;
@@ -5886,6 +5946,7 @@ a {
         text-align: center;
         width: 295px;
         line-height: 18px;
+        margin-top: 10PX;
     }
 
     .surgerypara {
@@ -6043,6 +6104,11 @@ a {
         font-size: 12px;
         opacity: 0.7;
         /* width: 200px; */
+        line-height: 20px;
+    }
+
+    .nummail, .mailnum{
+        font-size: 12px;
     }
 
     .recomhead {
@@ -6070,7 +6136,7 @@ a {
     }
 
     .recdescript p {
-        padding: 0px 0px 9px 0px;
+        padding: 0px;
         width: 300px;
         line-height: 15px;
     }
@@ -6080,7 +6146,7 @@ a {
     }
 
     .abtsur {
-        height: 75vh;
+        height: 70vh;
         gap: 10px;
         display: flex;
         justify-content: center;
@@ -6089,7 +6155,7 @@ a {
 
     .abtsurp {
         font-size: 18px;
-        padding: 20px 0px 20px 0px;
+        padding: 0px;
         width: 310px;
     }
 
@@ -6222,9 +6288,9 @@ a {
 
     .list2 ul {
         font-size: 12px;
-        width: 295px;
-        line-height: 20px;
-        padding: 0px 0px 0px 40px;
+        width: 284px;
+        line-height: 24px;
+        padding: 0px 0px 0px 7px;
     }
 
     .signdetail p {
@@ -6259,6 +6325,7 @@ a {
         padding: 0px;
         width: 290px;
         line-height: 0px;
+        margin-left: 106px;
     }
 
     .choosehead span {
@@ -6268,35 +6335,26 @@ a {
     .choosehead img {
         width: 280px;
         height: 250px;
-        margin: 0px;
+        margin-left: 111px;
     }
 
-    .choosepoint {
+    .choosepoint{
+        margin-left: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .points{
+        gap: 12px;
+    }
+
+    .points p{
         padding: 0px;
-    }
-
-    .points {
-        width: 290px;
-        gap: 10px;
-    }
-
-
-    .points .number {
-        font-size: 12px;
-        width: 25px;
-        height: 28px;
-    }
-
-    .points h2 {
-        font-size: 12px;
-    }
-
-    .points p {
-        font-size: 12px;
+        width: 100%;
     }
 
     .faqhead {
-        font-size: 24px;
+        font-size: 22px;
         width: 250px;
     }
 
@@ -6322,7 +6380,7 @@ a {
     }
 
     .q-text {
-        font-size: 12px;
+        font-size: 14px;
 
     }
 
@@ -6359,7 +6417,7 @@ a {
 
     .doctorpic {
         width: 360px;
-        height: 300px;
+        height: 260px;
     }
 
     .docin {
@@ -6375,6 +6433,7 @@ a {
     .experience {
         display: flex;
         gap: 15px;
+        margin-top: 5px;
     }
 
     .experiencesleft {
@@ -6455,6 +6514,7 @@ a {
     .des1 {
         font-size: 12px;
         width: 295px;
+        padding: 0px;
     }
 
     .book {
@@ -6464,7 +6524,7 @@ a {
 
     .top {
         right: 22px;
-        top: 75px;
+        top: 55px;
         padding: 7px 14px;
     }
 
@@ -6478,8 +6538,8 @@ a {
     }
 
     .exp {
-        bottom: 50px;
-        left: 26px;
+        bottom: 26px;
+        left: 40px;
     }
 
     .exp .star {
@@ -6504,9 +6564,6 @@ a {
         font-size: 12px;
     }
 
-    .clinic-title {
-        font-size: 16px;
-    }
 
     .faqs-right-side {
         width: 300px;
@@ -6554,7 +6611,13 @@ a {
         height: 50px;
     }
 
+    .footimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .footimg img {
-        margin-left: 30%;
+        /* margin-left: 0; */
     }
 }
